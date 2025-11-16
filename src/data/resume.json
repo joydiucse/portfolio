@@ -1,0 +1,231 @@
+{
+  "profile": {
+    "title": "",
+    "phone": "",
+    "email": "",
+    "linkedin": "",
+    "github": "",
+    "location": ""
+  },
+  "summary": "Results-driven Senior Software Engineer with 6+ years in full-stack development, system architecture, and database optimization. Expert in designing scalable, high-performance web applications using PHP, Laravel, Node.js, Express.js, React, and Next.js, with strong MySQL, PostgreSQL, and MongoDB expertise. Skilled in microservices, API design, and cloud-native deployments. Proven success optimizing performance, leading cross-functional teams, and delivering secure, maintainable solutions that drive business growth.",
+  "experience": [
+    {
+      "title": "Senior Software Engineer",
+      "dates": "Nexdecade Technology Pvt. Ltd.",
+      "company": "resumeSubHeadingList",
+      "location": "resumeItem{textbullet Led architecture, development, and deployment of high-traffic web applications using Node.js, Laravel, React, and Next.js, improving scalability and response time by 35%.}",
+      "bullets": [
+        "textbullet Engineered microservices and RESTful APIs with API Gateway, asynchronous processing, and service orchestration, reducing latency by 40% and increasing throughput by 50%.",
+        "textbullet Built CI/CD pipelines with Docker, Kubernetes, and Jenkins/GitHub Actions, automating build, test, and deployment, cutting release cycles by 50%.",
+        "textbullet Strengthened security with AES-256 encryption, JWT, OAuth2, and RBAC, ensuring data integrity and compliance.",
+        "textbullet Optimized MySQL, PostgreSQL, and MongoDB with indexing, query tuning, and caching strategies, boosting performance by 30%."
+      ]
+    },
+    {
+      "title": "Junior Software Engineer",
+      "dates": "Nexdecade Technology Pvt. Ltd.",
+      "company": "resumeSubHeadingList",
+      "location": "resumeItem{textbullet Delivered modular full-stack applications with Laravel, React, and Node.js, following MVC and scalable design principles.}",
+      "bullets": [
+        "textbullet Built and integrated RESTful APIs and third-party services (payment, analytics, messaging) to enhance system integration.",
+        "textbullet Optimized MySQL queries and caching strategies, improving API response times by 35%.",
+        "textbullet Collaborated under Agile/Scrum using Git and CI/CD, streamlining SDLC and sprint delivery.",
+        "textbullet Implemented unit, integration, and regression testing with PHPUnit and Jest, achieving 95% coverage and reducing post-deployment bugs by 25%."
+      ]
+    },
+    {
+      "title": "Web Developer",
+      "dates": "MoveXCourier",
+      "company": "resumeSubHeadingList",
+      "location": "resumeItem{textbullet Developed courier management and tracking web applications using Laravel MVC architecture.}",
+      "bullets": [
+        "textbullet Implemented authentication, authorization, and role-based access control for secure data handling.",
+        "textbullet Integrated third-party APIs (payment gateways, SMS) and optimized database queries and caching.",
+        "textbullet Designed normalized relational database schemas ensuring data integrity and efficient queries."
+      ]
+    },
+    {
+      "title": "Junior Instructor",
+      "dates": "Dhamrai Prince Polytechnic & Medical Institute",
+      "company": "resumeSubHeadingList",
+      "location": "resumeItem{textbullet Developed accounting and student management systems with Laravel, PHP, and MySQL, streamlining operations.}",
+      "bullets": [
+        "textbullet Implemented full-stack MVC features including authentication, CRUD operations, and responsive UI.",
+        "textbullet Deployed and maintained applications on cloud hosting, ensuring uptime and security compliance.",
+        "textbullet Taught SDLC, OOP, and modern web development, mentoring students on real-world projects."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "items": [
+        "} JavaScript (ES6+)",
+        "PHP",
+        "Python",
+        "SQL",
+        "HTML5",
+        "CSS3",
+        "TypeScript"
+      ]
+    },
+    {
+      "category": "Frameworks & Libraries",
+      "items": [
+        "} Node.js",
+        "Express.js",
+        "React.js",
+        "Next.js",
+        "Laravel",
+        "Redux",
+        "Tailwind CSS",
+        "Material-UI",
+        "Bootstrap"
+      ]
+    },
+    {
+      "category": "Architecture & Design",
+      "items": [
+        "} Microservices",
+        "RESTful APIs",
+        "MVC",
+        "Design Patterns",
+        "System Design",
+        "Scalable & Modular Architecture"
+      ]
+    },
+    {
+      "category": "Databases & Caching",
+      "items": [
+        "} MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Query Optimization",
+        "Indexing",
+        "ORM (Eloquent",
+        "Mongoose)",
+        "Data Modeling"
+      ]
+    },
+    {
+      "category": "DevOps & Cloud",
+      "items": [
+        "} Docker",
+        "Kubernetes",
+        "Jenkins",
+        "Git",
+        "GitHub Actions",
+        "CI/CD",
+        "AWS",
+        "Cloud Computing",
+        "Infrastructure as Code (IaC)"
+      ]
+    },
+    {
+      "category": "Testing & Methodologies",
+      "items": [
+        "} Unit",
+        "Integration",
+        "End-to-End Testing",
+        "TDD",
+        "BDD",
+        "Agile/Scrum",
+        "SDLC"
+      ]
+    },
+    {
+      "category": "Third-Party Integrations",
+      "items": [
+        "} Payment Gateways",
+        "Logistics APIs (Nuport",
+        "Pathao)",
+        "ChatGPT API",
+        "ZKTeco API",
+        "REST/SOAP Services"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Vehicle Tracking System (VTS)",
+      "dates": "Full-stack Web Application",
+      "company": "resumeSubHeadingList",
+      "location": "resumeItem{textbullet Developed 3 scalable VTS platforms using React.js and PHP with AES-256 encryption, RBAC, and ETL optimization.}",
+      "bullets": [
+        "textbullet Boosted analytics and reporting performance by 35% using Redis caching and database optimization."
+      ]
+    },
+    {
+      "title": "Saddyer Moddye Ltd Platform",
+      "dates": "E-commerce Management System",
+      "company": "resumeSubHeadingList",
+      "location": "resumeItem{textbullet Built full-stack e-commerce solution with Next.js and Node.js, integrating Nuport API for automated shipping.}",
+      "bullets": [
+        "textbullet Optimized inventory management and order processing using Redis caching and MongoDB query tuning."
+      ]
+    },
+    {
+      "title": "Ad Engine Optimization",
+      "dates": "Advertising Management System",
+      "company": "resumeSubHeadingList",
+      "location": "resumeItem{textbullet Refactored backend microservices and implemented VAST/VMAP protocols, improving ad delivery speed by 75%.}",
+      "bullets": [
+        "textbullet Optimized MongoDB queries and Redis caching for high-throughput ad serving."
+      ]
+    },
+    {
+      "title": "Daily Sun Newspaper Platform",
+      "dates": "Content Management System",
+      "company": "resumeSubHeadingList",
+      "location": "resumeItem{textbullet Developed full-stack CMS with Laravel and Next.js, including audio transcoding and automated workflows.}",
+      "bullets": [
+        "textbullet Enhanced performance and scalability using MySQL optimization and caching strategies."
+      ]
+    },
+    {
+      "title": "Nex Inventory Management",
+      "dates": "Inventory Management System",
+      "company": "resumeSubHeadingList",
+      "location": "resumeItem{textbullet Built inventory system with Laravel, integrating ChatGPT API and Redis caching for fast queries.}",
+      "bullets": [
+        "textbullet Optimized MySQL queries and workflows, improving operational efficiency by 40%."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "university": "Daffodil International University",
+      "location": "Bachelor of Science in Computer Science and Engineering, CGPA: 3.98/4.00",
+      "degree": "resumeSubheading",
+      "dates": "Dhamrai Polytechnic Institute"
+    },
+    {
+      "university": "Dhamrai Polytechnic Institute",
+      "location": "Diploma in Engineering, Computer Technology, CGPA: 3.78/4.00",
+      "degree": "resumeSubheading",
+      "dates": "Nalla Pulla Ideal Islamia Senior Madrasah"
+    },
+    {
+      "university": "Nalla Pulla Ideal Islamia Senior Madrasah",
+      "location": "Secondary Dakhil Certificate, CGPA: 4.63/5.00",
+      "degree": "resumeSubHeadingListEnd",
+      "dates": ""
+    }
+  ],
+  "certifications": [],
+  "additional": [
+    {
+      "label": "Languages",
+      "value": "} Bangla (Native), English (Fluent)"
+    },
+    {
+      "label": "Availability",
+      "value": "} Immediately available"
+    },
+    {
+      "label": "Technical Interests",
+      "value": "} AI/ML Research, Open Source, System Architecture"
+    }
+  ]
+}
