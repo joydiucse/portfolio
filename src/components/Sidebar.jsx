@@ -10,15 +10,18 @@ const nav = [
 
 export default function Sidebar() {
   return (
-    <aside className="hidden md:block fixed left-0 top-0 h-screen w-[320px] lg:w-[380px] px-6 lg:px-10 py-10">
-      <div className="space-y-6">
+    <aside className="flex items-center justify-center left-0 top-0 h-screen w-[320px] lg:w-[50%] px-6 lg:px-10 py-10">
+      <div className="w-[70%] space-y-6 ">
         <div>
-          <h1 className="text-2xl lg:text-3xl font-semibold text-white">{profile.name}</h1>
-          <p className="mt-1 text-blue-200">{profile.role}</p>
+          {/*<h1 className="text-2xl lg:text-3xl font-semibold text-white">{profile.name}</h1>
+          <p className="mt-1 text-blue-200">{profile.role}</p>*/}
         </div>
-        <nav className="space-y-2">
-          {nav.map(n => (
-            <a key={n.label} href={n.href} className="block text-blue-100 hover:text-white">{n.label}</a>
+        <nav className="space-y-0">
+          {nav.map((n, i) => (
+            <div key={i} className={'w-full group flex items-center gap-4 py-3 cursor-pointer font-semibold'}>
+                <div className={`w-10 group-hover:w-16 h-0.5 rounded bg-gray-700 group-hover:bg-gray-300 duration-200`}></div>
+                <a key={n.label} href={n.href} className="block text-blue-100 hover:text-white leading-none uppercase text-sm">{n.label}</a>
+            </div>
           ))}
         </nav>
         <div className="flex gap-3 text-blue-200">
