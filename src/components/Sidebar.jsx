@@ -10,7 +10,7 @@ const nav = [
 
 export default function Sidebar() {
   return (
-    <aside className="hidden md:block fixed left-0 top-0 h-screen w-[320px] lg:w-[380px] px-6 lg:px-10 py-10 bg-secondary">
+    <aside className="hidden md:block fixed left-0 top-0 h-screen w-[320px] lg:w-[380px] px-6 lg:px-10 py-10">
       <div className="space-y-6">
         <div>
           <h1 className="text-2xl lg:text-3xl font-semibold text-white">{profile.name}</h1>
