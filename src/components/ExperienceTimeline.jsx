@@ -4,7 +4,7 @@ export default function ExperienceTimeline() {
   return (
     <section id="experience" className="space-y-10">
       {experience.map(exp => (
-        <article key={exp.title + exp.company} className="group">
+        <div key={exp.title + exp.company} className="grid group">
           <div className="flex items-baseline justify-between">
             <h3 className="text-lg font-medium text-white">{exp.title}</h3>
             <span className="text-xs text-blue-200">{exp.dates}</span>
@@ -15,7 +15,7 @@ export default function ExperienceTimeline() {
               <li key={b}>• {b}</li>
             ))}
           </ul>
-        </article>
+        </div>
       ))}
     </section>
   )

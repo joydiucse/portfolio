@@ -24,12 +24,12 @@ function App() {
     return (
         <div ref={bgRef} className="font-sans mouse-gradient min-h-screen text-blue-100">
             <Sidebar/>
-            <main className="md:ml-[320px] lg:ml-[380px] px-6 md:px-10 py-10">
+            <main className="md:ml-[320px] lg:ml-[30%] px-6 md:px-10 py-10">
                 <div className="mx-auto max-w-3xl space-y-16">
-                    {/*<Summary/>
-                    <ExperienceTimeline/>*/}
-                    {/*<ProjectsList/>
-                    <Writings/>*/}
+                    <Summary/>
+                    <ExperienceTimeline/>
+                    <ProjectsList/>
+                    <Writings/>
                 </div>
             </main>
         </div>

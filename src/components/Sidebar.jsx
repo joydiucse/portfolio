@@ -10,11 +10,12 @@ const nav = [
 
 export default function Sidebar() {
   return (
-    <aside className="flex items-center justify-center left-0 top-0 h-screen w-[320px] lg:w-[50%] px-6 lg:px-10 py-10">
-      <div className="w-[70%] space-y-6 ">
-        <div>
-          {/*<h1 className="text-2xl lg:text-3xl font-semibold text-white">{profile.name}</h1>
-          <p className="mt-1 text-blue-200">{profile.role}</p>*/}
+    <aside className="fixed flex items-center justify-center left-0 top-0 h-screen w-[320px] lg:w-[40%] px-6 lg:px-10 py-10">
+      <div className="w-[70%] space-y-20 ">
+        <div className={'space-y-2'}>
+          <h1 className="text-4xl lg:text-6xl font-bold text-blue-100">{profile.name}</h1>
+          <p className="text-2xl font-semibold text-blue-100">{profile.role}</p>
+          <p className="text-sm text-blue-200">{profile.summary}</p>
         </div>
         <nav className="space-y-0">
           {nav.map((n, i) => (

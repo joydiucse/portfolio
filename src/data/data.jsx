@@ -1,5 +1,5 @@
 export const profile = {
-    name: "MD. JOYNAL ABEDIN",
+    name: "Md. Joynal Abedin",
     role: "Senior Software Engineer",
     summary: "6+ years in full-stack development, system architecture, and database optimization",
     phone: "+88 01785 893609",
