@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { FiMoon, FiSun } from 'react-icons/fi';
 import Container from "../../common/Container.jsx";
 import {profile} from "../../../data/data.jsx";
+import {Image, image} from "../../../utils/Global.jsx";
+import {AnimatePing} from "../../common/Animate.jsx";
+import {Button} from "@mui/material";
 
 function Navbar() {
 
@@ -29,10 +32,21 @@ function Navbar() {
 
     return (
         <>
-            <div className="sticky top-0 z-50 bg-primary/4">
+            <div className="sticky top-0 z-50 bg-primary-xlight">
                 <Container className={'py-3'}>
-                    <div className="flex items-center justify-between">
-                        <div className="font-semibold text-teal-700">{profile?.name}</div>
+                    <div className="fcb">
+                        <div className="fc gap-3">
+                            <div className="size-10 relative">
+                                <figure className="size-10 rounded-full overflow-hidden border-2 border-primary/20">
+                                    <Image src={image('joy-square.jpg')} className={'image-cover'}/>
+                                </figure>
+                                <div className="absolute bottom-1 right-0.5">
+                                    <AnimatePing color={'green-600'}/>
+                                </div>
+                            </div>
+                            <div className="text-xl font-bold ">{profile?.namePro}</div>
+                        </div>
+
                         <nav className="hidden sm:flex items-center gap-6 text-sm">
                             <a href="#services" className="hover:text-teal-700">Services</a>
                             <a href="#works" className="hover:text-teal-700">Works</a>
@@ -40,7 +54,7 @@ function Navbar() {
                             <a href="#experience" className="hover:text-teal-700">Experience</a>
                         </nav>
                         <div className="flex items-center gap-3">
-                            <div className="hidden sm:block text-sm text-gray-700 dark:text-gray-300">+001 (313) 345 678</div>
+                            <Button>Hire Me</Button>
                             <button
                                 onClick={() => applyTheme(theme === 'dark' ? 'light' : 'dark')}
                                 aria-label="Toggle theme"

@@ -3,12 +3,64 @@
 
 @theme {
     --color-primary: #256f6b;
-    --color-primary-xlight: #f8f7f1;
+    --color-primary-xlight: #f6f9f9;
     --color-secondary: #f59e0b;
 }
 
 .dark {
     --color-primary: #256f6b;
-    --color-primary-xlight: #f8f7f1;
+    --color-primary-xlight: #f6f9f9;
     --color-secondary: #fbbf24;
+}
+
+
+.fc{
+    @apply flex items-center;
+}
+
+.fcb{
+    @apply flex items-center justify-between;
+}
+
+.fcc{
+    @apply flex items-center justify-center;
+}
+
+.fcs{
+    @apply flex items-center justify-start;
+}
+
+.fce{
+    @apply flex items-center justify-end;
+}
+
+.fss{
+    @apply flex items-start justify-start;
+}
+
+.fsb{
+    @apply flex items-start justify-between;
+}
+
+.fse{
+    @apply flex items-start justify-end;
+}
+
+.fes{
+    @apply flex items-end justify-start;
+}
+
+.feb{
+    @apply flex items-end justify-between;
+}
+
+.fee{
+    @apply flex items-end justify-end;
+}
+
+
+
+
+.image-cover{
+    @apply w-full h-full object-cover
 }
