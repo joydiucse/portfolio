@@ -1,6 +1,7 @@
 export const profile = {
     name: "Joynal Abedin",
     namePro: "Joynal A.",
+    firstName: "Joynal",
     fullName: "Md. Joynal Abedin",
     shortName: "Joynal",
     role: "Senior Software Engineer",

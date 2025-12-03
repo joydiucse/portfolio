@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { FiMoon, FiSun } from 'react-icons/fi';
+import {FiArrowRight, FiMoon, FiSun} from 'react-icons/fi';
 import Container from "../../common/Container.jsx";
 import {profile} from "../../../data/data.jsx";
 import {Image, image} from "../../../utils/Global.jsx";
 import {AnimatePing} from "../../common/Animate.jsx";
 import {Button} from "@mui/material";
+import {PrimaryButton} from "../../common/Buttons.jsx";
 
 function Navbar() {
 
@@ -54,14 +55,16 @@ function Navbar() {
                             <a href="#experience" className="hover:text-teal-700">Experience</a>
                         </nav>
                         <div className="flex items-center gap-3">
-                            <Button>Hire Me</Button>
                             <button
                                 onClick={() => applyTheme(theme === 'dark' ? 'light' : 'dark')}
                                 aria-label="Toggle theme"
-                                className="inline-flex items-center justify-center size-8 rounded-lg ring-1 ring-gray-200 dark:ring-gray-700 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 shadow-sm hover:bg-gray-100 dark:hover:bg-gray-700"
+                                className="inline-flex items-center justify-center size-8 border border-transparent hover:border-gray-200  dark:hover:border-gray-700 rounded-lg  text-gray-700 dark:text-gray-200 hover:shadow-md hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer"
                             >
                                 {theme === 'dark' ? <FiSun /> : <FiMoon />}
                             </button>
+                            <PrimaryButton>
+                                <span>Hire Me</span> <FiArrowRight/>
+                            </PrimaryButton>
                         </div>
                     </div>
                 </Container>
