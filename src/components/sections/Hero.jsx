@@ -9,17 +9,17 @@ function Hero() {
     <div className="bg-primary-xlight overflow-hidden relative">
       <Container className="">
         <div className="grid grid-cols-1 lg:grid-cols-5 sm:gap-20 items-center relative">
-          <div className="col-span-3 fcc relative">
+          <div className="col-span-3 fsc relative">
             {/* Arrow line */}
             {/* Rectangle outline */}
-            <svg className="absolute right-[50%] top-6 text-secondary opacity-70 rotate-6" width="160" height="120" viewBox="0 0 160 120">
+            <svg className="hidden sm:block absolute left-[130px] top-5 text-secondary opacity-70 rotate-6" width="160" height="120" viewBox="0 0 160 120">
               <rect x="6" y="6" width="148" height="108" rx="16" ry="16" fill="none" stroke="currentColor" strokeWidth="3" className="animate-draw"></rect>
             </svg>
             {/* Triangle outline */}
 
 
             {/* Dashed line */}
-            <svg className="absolute left-1/2 bottom-20 text-primary opacity-50" width="160" height="20" viewBox="0 0 160 20">
+            <svg className="hidden sm:block absolute left-[280px] bottom-18 text-primary opacity-50" width="160" height="20" viewBox="0 0 160 20">
               <line x1="0" y1="10" x2="160" y2="10" stroke="currentColor" strokeDasharray="8 6" strokeWidth="3" className="animate-draw"></line>
             </svg>
             <div className="space-y-4 pt-8">
@@ -35,10 +35,9 @@ function Hero() {
             </div>
           </div>
           <div className="col-span-2 h-full fee lg:pt-4 relative">
-
             <Image
                 src={image('hero/hero-bg.png')}
-                className={'lg:min-h-[480px] lg:h-[calc(100vh_-_120px)]'}
+                className={'w-full sm:max-w-[360px] 2xl:max-w-[420px]'}
             />
           </div>
 
