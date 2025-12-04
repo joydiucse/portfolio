@@ -10,7 +10,7 @@ import CTASection from '../../components/sections/CTASection.jsx'
 
 function HomePage() {
   return (
-    <div className="space-y-6 sm:space-y-10">
+    <div className="">
       <Hero />
       <Service />
       {/*<StatsBar />

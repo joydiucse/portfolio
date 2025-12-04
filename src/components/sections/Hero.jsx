@@ -27,7 +27,7 @@ function Hero() {
                 <p>Hey There,</p>
                 <p>I’m <span className={'text-primary text-6xl sm:text-8xl'}>{displayName}</span></p>
               </div>
-              <p className="text-gray-600 w-3/4">{profile?.summary}</p>
+              <p className="text-gray-600 dark:text-gray-300 w-3/4">{profile?.summary}</p>
               <div className="fc gap-2">
 
               </div>
