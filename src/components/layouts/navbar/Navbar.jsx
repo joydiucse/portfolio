@@ -7,6 +7,7 @@ import { image } from "../../../utils/media.js";
 import {AnimatePing} from "../../common/Animate.jsx";
 import {PrimaryButton} from "../../common/Buttons.jsx";
 import {ReactIcon} from "../../common/Icons.jsx";
+import {Link} from "react-router-dom";
 
 function Navbar() {
 
@@ -37,17 +38,20 @@ function Navbar() {
             <div className="sticky top-0 z-50 bg-primary-xlight">
                 <Container className={'py-3'}>
                     <div className="fcb">
-                        <div className="fc gap-3">
-                            <div className="size-10 relative">
-                                <figure className="size-10 rounded-full overflow-hidden border-2 border-primary/20">
-                                    <Image src={image('joy-square.jpg')} className={'image-cover'}/>
-                                </figure>
-                                <div className="absolute bottom-1 right-0.5">
-                                    <AnimatePing color={'green-600'}/>
+                        <Link to={'/'}>
+                            <div className="fc gap-3">
+                                <div className="size-10 relative">
+                                    <figure className="size-10 rounded-full overflow-hidden border-2 border-primary/20">
+                                        <Image src={image('joy-square.jpg')} className={'image-cover'}/>
+                                    </figure>
+                                    <div className="absolute bottom-1 right-0.5">
+                                        <AnimatePing color={'green-600'}/>
+                                    </div>
                                 </div>
+                                <div className="text-xl font-bold ">{profile?.namePro}</div>
                             </div>
-                            <div className="text-xl font-bold ">{profile?.namePro}</div>
-                        </div>
+                        </Link>
+
 
                         <nav className="hidden sm:flex items-center gap-6 text-sm">
                             <a href="#services" className="hover:text-teal-700">Services</a>

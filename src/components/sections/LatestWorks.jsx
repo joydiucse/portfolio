@@ -69,7 +69,7 @@ function LatestWorks() {
                                     <div className="feb">
                                         <div className="mt-6 fc flex-wrap gap-2 text-xs">
                                             {item.stack.slice(0,4).map((s, i) => (
-                                                <span key={i} className={`inline-block ${item?.bg || 'bg-primary'} text-white font-medium rounded-sm px-1.5 py-0.5`}>{s}</span>
+                                                <span key={i} className={`inline-block ${item?.btnBackground || 'bg-primary'} text-white font-medium rounded-sm px-1.5 py-0.5`}>{s}</span>
                                             ))}
                                         </div>
                                     </div>

@@ -111,8 +111,7 @@ export const latestProjects = [
         dates: "Apr 2023 — Present",
         summary: "Full-stack Web Application",
         stack: ["React.js", "PHP", "MySQL", "Redis", "Docker"],
-        bg: "bg-primary",
-        background: "bg-gradient-to-br from-primary/10 to-primary-dark/10",
+        btnBackground: "bg-blue-600",
         live: "#",
         image: image('projects/vts.png'),
         bullets: [
@@ -121,14 +120,13 @@ export const latestProjects = [
         ]
     },
     {
-        title: "Saddyer Moddye Ltd Platform",
+        title: "Saddher Moddhe E-commerce",
         dates: "Mar 2024 — Present",
         summary: "E-commerce Management System",
         stack: ["Next.js", "Node.js", "MongoDB", "Redis", "Nuport API"],
-        bg: "bg-secondary",
-        background: "bg-gradient-to-br from-yellow-400/10 to-yellow-700/10",
+        btnBackground: "bg-black",
         live: "#",
-        image: image('projects/vts.png'),
+        image: image('projects/saddher-moddhe.png'),
         bullets: [
             "Built full-stack e-commerce solution with Next.js and Node.js, integrating Nuport API for automated shipping.",
             "Optimized inventory management and order processing using Redis caching and MongoDB query tuning."
@@ -139,23 +137,22 @@ export const latestProjects = [
         dates: "Aug 2023 — Mar 2025",
         summary: "Advertising Management System",
         stack: ["Node.js", "MongoDB", "React.js", "Redis"],
-        bg: "bg-indigo-600",
-        background: "bg-gradient-to-bl from-indigo-500/10 to-indigo-700/10",
+        btnBackground: "bg-black/80",
         live: "#",
-        image: image('projects/vts.png'),
+        image: image('projects/ads.png'),
         bullets: [
             "Refactored backend microservices and implemented VAST/VMAP protocols, improving ad delivery speed by 75%.",
             "Optimized MongoDB queries and Redis caching for high-throughput ad serving."
         ]
     },
     {
-        title: "Daily Sun Newspaper Platform",
+        title: "Newspaper Platform management",
         dates: "Feb 2023 — Jul 2023",
         summary: "Content Management System",
         stack: ["Next.js", "Laravel", "MySQL", "Python"],
-        background: "bg-cyan-400",
+        btnBackground: "bg-red-700",
         live: "#",
-        image: image('projects/vts.png'),
+        image: image('projects/newspaper.png'),
         bullets: [
             "Developed full-stack CMS with Laravel and Next.js, including audio transcoding and automated workflows.",
             "Enhanced performance and scalability using MySQL optimization and caching strategies."
@@ -166,8 +163,7 @@ export const latestProjects = [
         dates: "Sep 2022 — Jan 2023",
         summary: "Inventory Management System",
         stack: ["Laravel", "MySQL", "Redis", "ChatGPT API"],
-        bg: "bg-rose-400",
-        background: "bg-rose-400/10",
+        btnBackground: "bg-rose-600",
         live: "#",
         image: image('projects/vts.png'),
         bullets: [
