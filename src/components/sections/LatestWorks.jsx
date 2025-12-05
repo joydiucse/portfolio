@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
-import {IconButton} from "@mui/material";
+ 
 
 function LatestWorks() {
     return (
@@ -39,7 +39,7 @@ function LatestWorks() {
                 >
                     {latestProjects.map((item) => (
                         <SwiperSlide key={item.title}>
-                            <div className={`rounded-xl p-4 h-[280px] sm:h-[320px] border border-gray-200 dark:border-gray-800 relative overflow-hidden shadow-lg hover:shadow-xl`}>
+                            <div className={`rounded-xl p-4 h-[280px] sm:h-[320px] border border-gray-200 dark:border-gray-800 relative overflow-hidden shadow-lg hover:shadow-xl group`}>
                                 {/*<div className="absolute inset-0 z-10 pointer-events-none">
                                     <div className={`absolute -left-14 -top-14 size-56 rounded-full bg-white/10 blur-xl`}></div>
                                     <div className={`absolute right-6 top-6 w-40 h-56 rounded-xl ${item.background} `}></div>
@@ -48,6 +48,12 @@ function LatestWorks() {
                                 <figure className="absolute top-0 left-0 w-full h-full z-[1]">
                                     <img src={item?.image} className={'image-cover'}/>
                                 </figure>
+                                <div className="absolute inset-0 z-20 bg-gray-900/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 fcc">
+                                    <div className="fc gap-3">
+                                        <Link to={'#'} className="px-3 py-1.5 text-sm font-medium rounded-md bg-white text-gray-900 hover:bg-gray-100">Details</Link>
+                                        <a href={item.live} target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 text-sm font-medium rounded-md bg-primary text-white hover:bg-primary-dark">Live Link</a>
+                                    </div>
+                                </div>
                                 <div className="relative z-10 h-full flex flex-col justify-between text-white">
                                     <div>
                                         <div className="text-xl font-bold">{item.title}</div>
