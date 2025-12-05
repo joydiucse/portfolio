@@ -12,10 +12,10 @@ function ServicesList() {
   return (
     <Container className="py-10" id="services">
       <div className="grid sm:grid-cols-3 gap-6">
-        {items.map(({ icon: _Icon, title, count, color }) => (
+        {items.map(({ icon, title, count, color }) => (
           <div key={title} className="flex items-center gap-4 bg-white rounded-2xl ring-1 ring-gray-200 p-5">
             <div className={`size-12 rounded-full grid place-items-center text-white ${color}`}>
-              <_Icon />
+              {React.createElement(icon)}
             </div>
             <div>
               <div className="font-semibold">{title}</div>

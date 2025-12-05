@@ -1,15 +1,11 @@
-export const image = (path = 'placeholder.svg') => {
-    return `/images/${path}`;
-};
-
 export const Image = ({
-    src = image(),
+    src,
     className = '',
-    errorImage = image(),
+    errorImage,
     alt = ''
 }) => {
     const handleError = (e) => {
-        if (e.target.src !== errorImage) {
+        if (errorImage && e.target.src !== errorImage) {
             e.target.src = errorImage;
         }
     };

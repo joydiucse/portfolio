@@ -1,7 +1,8 @@
 import React from 'react'
 import Container from '../../components/common/Container.jsx'
 import {profile} from "../../data/data.jsx";
-import {image, Image} from "../../utils/Global.jsx";
+import { Image } from "../../utils/Global.jsx";
+import { image } from "../../utils/media.js";
 
 function Hero() {
   const displayName = profile?.shortName || profile?.namePro || profile?.fullName || profile?.name || profile?.firstName || ''

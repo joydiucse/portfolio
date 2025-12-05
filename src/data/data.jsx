@@ -109,7 +109,10 @@ export const latestProjects = [
         dates: "Apr 2023 — Present",
         summary: "Full-stack Web Application",
         stack: ["React.js", "PHP", "MySQL", "Redis", "Docker"],
-        background: "bg-gradient-to-br from-primary to-primary-dark",
+        bg: "bg-primary",
+        background: "bg-gradient-to-br from-primary/10 to-primary-dark/10",
+        live: "#",
+        image: "https://placehold.co/160x120/png",
         bullets: [
             "Developed 3 scalable VTS platforms using React.js and PHP with AES-256 encryption, RBAC, and ETL optimization.",
             "Boosted analytics and reporting performance by 35% using Redis caching and database optimization."
@@ -120,7 +123,10 @@ export const latestProjects = [
         dates: "Mar 2024 — Present",
         summary: "E-commerce Management System",
         stack: ["Next.js", "Node.js", "MongoDB", "Redis", "Nuport API"],
-        background: "bg-gradient-to-br from-secondary to-yellow-700",
+        bg: "bg-secondary",
+        background: "bg-gradient-to-br from-yellow-400/10 to-yellow-700/10",
+        live: "#",
+        image: "https://placehold.co/160x120/png",
         bullets: [
             "Built full-stack e-commerce solution with Next.js and Node.js, integrating Nuport API for automated shipping.",
             "Optimized inventory management and order processing using Redis caching and MongoDB query tuning."
@@ -131,29 +137,37 @@ export const latestProjects = [
         dates: "Aug 2023 — Mar 2025",
         summary: "Advertising Management System",
         stack: ["Node.js", "MongoDB", "React.js", "Redis"],
-        background: "bg-gradient-to-bl from-indigo-500 to-indigo-700",
+        bg: "bg-indigo-600",
+        background: "bg-gradient-to-bl from-indigo-500/10 to-indigo-700/10",
+        live: "#",
+        image: "https://placehold.co/160x120/png",
         bullets: [
             "Refactored backend microservices and implemented VAST/VMAP protocols, improving ad delivery speed by 75%.",
             "Optimized MongoDB queries and Redis caching for high-throughput ad serving."
         ]
     },
-    {
+    /*{
         title: "Daily Sun Newspaper Platform",
         dates: "Feb 2023 — Jul 2023",
         summary: "Content Management System",
         stack: ["Next.js", "Laravel", "MySQL", "Python"],
         background: "bg-cyan-400",
+        live: "#",
+        image: "https://placehold.co/160x120/png",
         bullets: [
             "Developed full-stack CMS with Laravel and Next.js, including audio transcoding and automated workflows.",
             "Enhanced performance and scalability using MySQL optimization and caching strategies."
         ]
-    },
+    },*/
     {
         title: "Nex Inventory Management",
         dates: "Sep 2022 — Jan 2023",
         summary: "Inventory Management System",
         stack: ["Laravel", "MySQL", "Redis", "ChatGPT API"],
-        background: "bg-rose-400",
+        bg: "bg-rose-400",
+        background: "bg-rose-400/10",
+        live: "#",
+        image: "https://placehold.co/160x120/png",
         bullets: [
             "Built inventory system with Laravel, integrating ChatGPT API and Redis caching for fast queries.",
             "Optimized MySQL queries and workflows, improving operational efficiency by 40%."

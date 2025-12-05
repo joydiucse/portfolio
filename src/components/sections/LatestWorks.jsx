@@ -3,12 +3,11 @@ import Container from '../../components/common/Container.jsx'
 import {latestProjects} from '../../data/data.jsx'
 import {Link} from "react-router-dom";
 import {ReactIcon} from "../common/Icons.jsx";
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css'
+import { Image } from '../../utils/Global.jsx'
 
 function LatestWorks() {
     return (
-        <Container className="py-12" id="works">
+        <Container className="py-16" id="works">
             <div className="fcb">
                 <div className="space-y-1">
                     <h3 className="text-2xl font-bold">My Latest Works</h3>
@@ -20,38 +19,28 @@ function LatestWorks() {
                     </Link>
                 </div>
             </div>
-            <div className="">
-                <Swiper
-                    spaceBetween={16}
-                    breakpoints={{
-                        0: { slidesPerView: 1 },
-                        640: { slidesPerView: 2 },
-                        1024: { slidesPerView: 3 },
-                    }}
-                >
-                    {latestProjects.map((item, index) => (
-                        <SwiperSlide key={index} className={'py-8'}>
-                            <div className={`rounded-3xl p-6 h-[280px] sm:h-[320px] ${item.background} text-white relative overflow-hidden shadow-lg hover:shadow-xl`}>
-                                <div className="absolute inset-0 pointer-events-none">
-                                    <div className="absolute -left-14 -top-14 size-56 rounded-full bg-white/10 blur-xl"></div>
-                                    <div className="absolute right-6 top-6 w-40 h-56 rounded-xl bg-white/15"></div>
-                                    <div className="absolute right-52 top-10 w-28 h-40 rounded-xl bg-white/10"></div>
-                                </div>
-                                <div className="relative z-10 h-full flex flex-col justify-between">
-                                    <div className="">
-                                        <div className="text-2xl font-bold">{item.title}</div>
-                                        <div className="text-sm/5 opacity-90 mt-1">{item.summary}</div>
-                                    </div>
-                                    <div className="mt-6 fc gap-2 text-xs">
-                                        {item.stack.slice(0,4).map((s, i) => (
-                                            <span key={i} className="inline-block bg-black/40 rounded px-2 py-1">{s}</span>
-                                        ))}
-                                    </div>
-                                </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-6">
+                {latestProjects.map((item) => (
+                    <div key={item.title} className={`rounded-xl p-4 h-[280px] sm:h-[320px] border border-gray-200 relative overflow-hidden shadow-lg hover:shadow-xl`}>
+                        <div className="absolute inset-0 pointer-events-none">
+                            <div className={`absolute -left-14 -top-14 size-56 rounded-full bg-white/10 blur-xl`}></div>
+                            <div className={`absolute right-6 top-6 w-40 h-56 rounded-xl ${item.background} `}></div>
+                            <div className={`absolute right-52 top-10 w-28 h-40 rounded-xl  ${item.background} `}></div>
+                        </div>
+                        <div className="relative z-10 h-full flex flex-col justify-end">
+                            <div>
+                                <div className="text-xl font-bold">{item.title}</div>
+                                <div className="text-xs opacity-90 mt-1">{item.summary}</div>
                             </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+                            
+                            <div className="mt-6 fc flex-wrap gap-2 text-xs">
+                                {item.stack.slice(0,4).map((s, i) => (
+                                    <span key={i} className={`inline-block ${item?.bg || 'bg-primary'} text-white font-medium rounded-sm px-1.5 py-0.5`}>{s}</span>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                ))}
             </div>
 
         </Container>
