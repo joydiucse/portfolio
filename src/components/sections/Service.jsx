@@ -27,11 +27,11 @@ const data = [
 const serviceCount = [
     {
         label: 'Project Completed',
-        count: '50+'
+        count: '55+'
     },
     {
         label: 'Happy Clients',
-        count: '25+'
+        count: '32+'
     },
 
 ]
