@@ -34,7 +34,7 @@ function Testimonials() {
         >
           {testimonials.map((t) => (
             <SwiperSlide key={t.name}>
-              <div className="py-10">
+              <div className="py-10 px-1">
               <div className="relative overflow-visible">
                 <div className="absolute -top-8 left-1/2 -translate-x-1/2 z-20">
                   <div className={`size-12 rounded-full ${t.color} grid place-items-center ring-4 ring-white drop-shadow-md`}></div>
