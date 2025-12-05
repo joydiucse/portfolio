@@ -12,7 +12,7 @@ function TimelineItem({ item, index }) {
         <div className="text-sm text-gray-600">{item.dates}</div>
       </div>
       <div className="fcc relative">
-        <div className="size-5 rounded-full ring-4 ring-white dark:ring-gray-700 shadow-sm border border-gray-300 bg-primary-xlight fcc">
+        <div className="size-4 rounded-full ring-2 ring-white dark:ring-gray-700 shadow-sm border border-gray-300 bg-primary-xlight fcc">
           <div className={`size-3 rounded-full ${dotColor}`}></div>
         </div>
       </div>
@@ -33,7 +33,7 @@ function ExperienceSection() {
       <Container className="py-12" id="experience">
         <h3 className="text-2xl font-bold mb-8 text-center">My Work Experience</h3>
         <div className="relative">
-          <div className="absolute left-8 top-0 h-full border-l-2 border-dashed border-gray-300 dark:border-gray-700 sm:hidden"></div>
+          <div className="absolute left-[8px] top-0 h-full border-l-2 border-dashed border-gray-300 dark:border-gray-700 sm:hidden"></div>
           <div className="absolute left-1/2 top-0 -translate-x-1/2 h-full border-l-2 border-dashed border-gray-300 dark:border-gray-700 hidden sm:block"></div>
           <div className="space-y-8">
             {items.map((item, idx) => (
