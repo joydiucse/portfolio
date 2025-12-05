@@ -111,18 +111,28 @@ function Testimonials() {
             >
               <ReactIcon name={'close'} className="text-gray-700 dark:text-gray-300" />
             </button>
-            <div className="grid grid-cols-4 gap-4">
-              <div className="fcc">
+            <div className="fc gap-4">
+              <div className="w-48 fce">
                 <Image src={selected?.avatar} className="size-16 object-cover rounded-full ring-2 ring-gray-200 dark:ring-gray-700" />
               </div>
               <div className="col-span-3">
-                <p className="font-semibold">{selected?.name}</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">{selected?.role} {selected?.company && <span>• {selected?.company}</span>}</p>
-                <div className="mt-3 relative">
-                  <div className="absolute -top-4 -left-4 text-6xl opacity-20">
-                    <ReactIcon name={'single-quote'} className="text-gray-500 dark:text-gray-400" />
+                <div className="fc gap-3">
+                  <div className="">
+                    <span className="inline-flex items-center justify-center rounded-xl bg-primary/10 dark:bg-primary/20 p-1 rotate-3">
+                      <ReactIcon name={'quote'} className="text-4xl text-primary/70 dark:text-primary/80" />
+                    </span>
                   </div>
-                  <p className="relative z-10 text-sm text-gray-800 dark:text-gray-200">{selected?.statement}</p>
+                  <div className="">
+                    <p className="font-semibold">{selected?.name}</p>
+                    <p className="text-xsm text-gray-600 dark:text-gray-400">{selected?.role} {selected?.company && <span>• {selected?.company}</span>}</p>
+                  </div>
+                </div>
+
+                <div className="mt-2 ml-5 pl-3 py-2 border-l border-gray-400 border-dashed relative">
+                  <div className="fcc absolute -left-1 -bottom-2">
+                    <div className={`size-2 rounded-full bg-gray-400 `}></div>
+                  </div>
+                  <p className="text-sm text-gray-800 dark:text-gray-200">{selected?.statement}</p>
                 </div>
               </div>
             </div>

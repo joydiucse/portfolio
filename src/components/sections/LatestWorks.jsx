@@ -26,8 +26,8 @@ function LatestWorks() {
             </div>
             <div className="mt-10">
                 <Swiper
-                    modules={[Pagination]}
-                    pagination={{ clickable: true }}
+                    //modules={[Pagination]}
+                    //pagination={{ clickable: true }}
                     spaceBetween={16}
                     centeredSlides={false}
                     breakpoints={{
