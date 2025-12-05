@@ -6,7 +6,7 @@ import { Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import {image} from "../../utils/media.js";
-import { Dialog, DialogTitle, DialogContent, DialogActions, Button } from '@mui/material'
+import { Dialog, DialogContent, IconButton } from '@mui/material'
 import {ReactIcon} from "../common/Icons.jsx";
 
 const testimonials = [
@@ -95,34 +95,38 @@ function Testimonials() {
             </SwiperSlide>
           ))}
         </Swiper>
-        <Dialog open={open} onClose={handleClose} fullWidth maxWidth="sm">
-          <DialogTitle>{selected?.name} • {selected?.role}</DialogTitle>
-          <DialogContent dividers>
-            <div className="grid grid-cols-4 ">
+        <Dialog
+          open={open}
+          onClose={handleClose}
+          fullWidth
+          maxWidth="sm"
+          PaperProps={{ className: 'bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-200 rounded-2xl shadow-xl' }}
+          slotProps={{ backdrop: { className: 'bg-black/40 dark:bg-black/60 backdrop-blur-sm' } }}
+        >
+          <DialogContent className="relative p-6">
+            <button
+              onClick={handleClose}
+              aria-label="Close"
+              className="absolute top-4 right-4 inline-flex items-center justify-center size-8 rounded-md bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
+            >
+              <ReactIcon name={'close'} className="text-gray-700 dark:text-gray-300" />
+            </button>
+            <div className="grid grid-cols-4 gap-4">
               <div className="fcc">
-                <Image src={selected?.avatar} className="size-16 object-cover rounded-full ring-2 ring-gray-200" />
+                <Image src={selected?.avatar} className="size-16 object-cover rounded-full ring-2 ring-gray-200 dark:ring-gray-700" />
               </div>
-              <div className="col-span-3 border-l border-gray-300  dark:border-gray-500 pl-6">
-                <p className={'font-semibold'}>{selected?.name}</p>
-                <p className={'text-sm'}>
-                  • {selected?.role} {selected?.company && <span>({selected?.company})</span>}
-                </p>
+              <div className="col-span-3">
+                <p className="font-semibold">{selected?.name}</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">{selected?.role} {selected?.company && <span>• {selected?.company}</span>}</p>
                 <div className="mt-3 relative">
                   <div className="absolute -top-4 -left-4 text-6xl opacity-20">
-                    <ReactIcon name={'single-quote'}/>
+                    <ReactIcon name={'single-quote'} className="text-gray-500 dark:text-gray-400" />
                   </div>
                   <p className="relative z-10 text-sm text-gray-800 dark:text-gray-200">{selected?.statement}</p>
                 </div>
-
               </div>
             </div>
-
-
-
           </DialogContent>
-          <DialogActions>
-            <Button onClick={handleClose} variant="contained">Close</Button>
-          </DialogActions>
         </Dialog>
       </Container>
     </div>
