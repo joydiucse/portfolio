@@ -93,22 +93,23 @@ export const experience = [
         company: "Dhamrai Prince Polytechnic Institute",
         dates: "Sep 2019 — May 2023",
         location: "Dhamrai, Dhaka, Bangladesh",
-        summary: "Developed accounting and student management systems with Laravel and PHP, implementing full-stack MVC features and deploying cloud-hosted applications. Taught SDLC, OOP, and modern web development, mentoring students on practical projects.",
+        summary: "Developed accounting and student management systems with Laravel and PHP, implementing full-stack MVC features and deploying cloud-hosted applications. Taught SDLC, OOP, and modern web development, mentoring students on practical latestProjects.",
         bullets: [
             "Developed accounting and student management systems with Laravel, PHP, and MySQL, streamlining operations.",
             "Implemented full-stack MVC features including authentication, CRUD operations, and responsive UI.",
             "Deployed and maintained applications on cloud hosting, ensuring uptime and security compliance.",
-            "Taught SDLC, OOP, and modern web development, mentoring students on real-world projects."
+            "Taught SDLC, OOP, and modern web development, mentoring students on real-world latestProjects."
         ]
     }
 ]
 
-export const projects = [
+export const latestProjects = [
     {
         title: "Vehicle Tracking System (VTS)",
         dates: "Apr 2023 — Present",
         summary: "Full-stack Web Application",
         stack: ["React.js", "PHP", "MySQL", "Redis", "Docker"],
+        background: "bg-gradient-to-br from-primary to-primary-dark",
         bullets: [
             "Developed 3 scalable VTS platforms using React.js and PHP with AES-256 encryption, RBAC, and ETL optimization.",
             "Boosted analytics and reporting performance by 35% using Redis caching and database optimization."
@@ -119,6 +120,7 @@ export const projects = [
         dates: "Mar 2024 — Present",
         summary: "E-commerce Management System",
         stack: ["Next.js", "Node.js", "MongoDB", "Redis", "Nuport API"],
+        background: "bg-gradient-to-br from-secondary to-yellow-700",
         bullets: [
             "Built full-stack e-commerce solution with Next.js and Node.js, integrating Nuport API for automated shipping.",
             "Optimized inventory management and order processing using Redis caching and MongoDB query tuning."
@@ -129,6 +131,7 @@ export const projects = [
         dates: "Aug 2023 — Mar 2025",
         summary: "Advertising Management System",
         stack: ["Node.js", "MongoDB", "React.js", "Redis"],
+        background: "bg-gradient-to-bl from-indigo-500 to-indigo-700",
         bullets: [
             "Refactored backend microservices and implemented VAST/VMAP protocols, improving ad delivery speed by 75%.",
             "Optimized MongoDB queries and Redis caching for high-throughput ad serving."
@@ -139,6 +142,7 @@ export const projects = [
         dates: "Feb 2023 — Jul 2023",
         summary: "Content Management System",
         stack: ["Next.js", "Laravel", "MySQL", "Python"],
+        background: "bg-cyan-400",
         bullets: [
             "Developed full-stack CMS with Laravel and Next.js, including audio transcoding and automated workflows.",
             "Enhanced performance and scalability using MySQL optimization and caching strategies."
@@ -149,6 +153,7 @@ export const projects = [
         dates: "Sep 2022 — Jan 2023",
         summary: "Inventory Management System",
         stack: ["Laravel", "MySQL", "Redis", "ChatGPT API"],
+        background: "bg-rose-400",
         bullets: [
             "Built inventory system with Laravel, integrating ChatGPT API and Redis caching for fast queries.",
             "Optimized MySQL queries and workflows, improving operational efficiency by 40%."
@@ -268,7 +273,7 @@ export default {
     summary,
     skills,
     experience,
-    projects,
+    projects: latestProjects,
     education,
     certifications,
     additional,
