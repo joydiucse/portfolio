@@ -15,6 +15,9 @@
     --color-secondary: #fbbf24;
 }
 
+.bg-body{
+    @apply bg-white dark:bg-gray-950
+}
 
 .fc{
     @apply flex items-center;

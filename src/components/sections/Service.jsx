@@ -55,23 +55,26 @@ function Service() {
 
             {/* LEFT SECTION */}
             <div className="lg:col-span-2">
-              <div className="space-y-4">
-                {data.map((item, index) => (
-                    <Link
-                        to="#"
-                        key={index}
-                        className="block sample-border rounded-lg px-4 py-3 hover:shadow-xl duration-200"
-                    >
-                      <div className="flex items-center gap-6">
-                        <IconButton icon={item?.icon} className={item?.className} />
-                        <div className="space-y-0">
-                          <p className="text-lg font-medium">{item?.title}</p>
-                          <p className="text-sm">{item?.count}</p>
-                        </div>
-                      </div>
-                    </Link>
-                ))}
-              </div>
+                <div className="-mt-32 sm:mt-0 z-10 relative bg-body rounded-2xl sm:rounded-0 py-4 sm:py-0 -mx-2 sm:mx-0 px-4 sm:px-0 border sm:border-none border-gray-200 shadow-xl sm:shadow-none">
+                    <div className="space-y-4">
+                        {data.map((item, index) => (
+                            <Link
+                                to="#"
+                                key={index}
+                                className="block sample-border rounded-lg px-4 py-3 hover:shadow-xl duration-200"
+                            >
+                                <div className="flex items-center gap-6">
+                                    <IconButton icon={item?.icon} className={item?.className} />
+                                    <div className="space-y-0">
+                                        <p className="text-lg font-medium">{item?.title}</p>
+                                        <p className="text-sm">{item?.count}</p>
+                                    </div>
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+
             </div>
 
             {/* EMPTY COLUMN - auto hidden on mobile */}
