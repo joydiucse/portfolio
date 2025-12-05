@@ -163,9 +163,9 @@ export const latestProjects = [
         dates: "Sep 2022 — Jan 2023",
         summary: "Inventory Management System",
         stack: ["Laravel", "MySQL", "Redis", "ChatGPT API"],
-        btnBackground: "bg-rose-600",
+        btnBackground: "bg-black/90",
         live: "#",
-        image: image('projects/vts.png'),
+        image: image('projects/inventory.png'),
         bullets: [
             "Built inventory system with Laravel, integrating ChatGPT API and Redis caching for fast queries.",
             "Optimized MySQL queries and workflows, improving operational efficiency by 40%."
