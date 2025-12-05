@@ -38,7 +38,7 @@ function LatestWorks() {
                     }}
                 >
                     {latestProjects.map((item) => (
-                        <SwiperSlide key={item.title}>
+                        <SwiperSlide key={item.title} className={'pt-2 pb-12'}>
                             <div className={`rounded-xl p-4 h-[280px] sm:h-[320px] border border-gray-200 dark:border-gray-800 relative overflow-hidden shadow-lg hover:shadow-xl group`}>
                                 {/*<div className="absolute inset-0 z-10 pointer-events-none">
                                     <div className={`absolute -left-14 -top-14 size-56 rounded-full bg-white/10 blur-xl`}></div>
@@ -48,10 +48,17 @@ function LatestWorks() {
                                 <figure className="absolute top-0 left-0 w-full h-full z-[1]">
                                     <img src={item?.image} className={'image-cover'}/>
                                 </figure>
-                                <div className="absolute inset-0 z-20 bg-gray-900/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 fcc">
+                                <div className="absolute inset-0 z-20 bg-gray-900/70  opacity-0 group-hover:opacity-100 transition-opacity duration-300 fcc">
                                     <div className="fc gap-3">
-                                        <Link to={'#'} className="px-3 py-1.5 text-sm font-medium rounded-md bg-white text-gray-900 hover:bg-gray-100">Details</Link>
-                                        <a href={item.live} target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 text-sm font-medium rounded-md bg-primary text-white hover:bg-primary-dark">Live Link</a>
+                                        <Link to={'#'} className="fc flex-col items-center gap-2 px-3 py-2 text-sm font-semibold rounded-lg  text-white  hover:bg-gray-950/50">
+                                            <ReactIcon name={'info'} className="text-base" />
+                                            <span>Details</span>
+                                        </Link>
+                                        <Link to={item?.live} target="_blank" className="fc flex-col items-center gap-2 px-3 py-2 text-sm font-semibold rounded-lg  text-white  hover:bg-gray-950/50">
+                                            <ReactIcon name={'arrow-up-right'} />
+                                            <span>Live Link</span>
+                                        </Link>
+
                                     </div>
                                 </div>
                                 <div className="relative z-10 h-full flex flex-col justify-between text-white">
