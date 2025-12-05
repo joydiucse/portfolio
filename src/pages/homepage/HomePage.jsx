@@ -17,6 +17,7 @@ function HomePage() {
             <LatestWorks />
             <Testimonials />
 
+
             {/*<StatsBar />
       <ServicesList />
       <ExperienceSection />

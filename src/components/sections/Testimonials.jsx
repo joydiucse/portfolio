@@ -18,7 +18,7 @@ function Testimonials() {
   return (
     <div className={'bg-primary-xlight'}>
       <Container className="py-12">
-        <h3 className="text-2xl font-bold mb-3 text-center">People talk about us</h3>
+        <h3 className="text-2xl font-bold mb-3 text-center">People talk about me</h3>
         <p className="text-center text-gray-600 mb-6">I got a job that was in accordance with the story of the world</p>
         <style>{`
           .testimonial-card, .testimonial-card-avater { transition: transform .35s ease, box-shadow .35s ease; }

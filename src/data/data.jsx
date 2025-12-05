@@ -146,7 +146,7 @@ export const latestProjects = [
             "Optimized MongoDB queries and Redis caching for high-throughput ad serving."
         ]
     },
-    /*{
+    {
         title: "Daily Sun Newspaper Platform",
         dates: "Feb 2023 — Jul 2023",
         summary: "Content Management System",
@@ -158,7 +158,7 @@ export const latestProjects = [
             "Developed full-stack CMS with Laravel and Next.js, including audio transcoding and automated workflows.",
             "Enhanced performance and scalability using MySQL optimization and caching strategies."
         ]
-    },*/
+    },
     {
         title: "Nex Inventory Management",
         dates: "Sep 2022 — Jan 2023",
