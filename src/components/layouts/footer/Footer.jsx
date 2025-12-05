@@ -14,7 +14,7 @@ function Footer() {
   }
 
   return (
-    <footer className="mt-10 relative overflow-hidden border-t border-gray-200 dark:border-gray-800 bg-gradient-to-br from-primary/5 to-transparent dark:from-primary-dark/10">
+    <footer className="relative overflow-hidden border-t border-gray-200 dark:border-gray-800 bg-gradient-to-br from-primary/5 to-transparent dark:from-primary-dark/10">
       <div className="absolute -left-20 -top-24 size-80 rounded-full bg-primary/10 blur-2xl"></div>
       <div className="absolute right-[-40px] bottom-[-40px] size-80 rounded-full bg-secondary/10 blur-2xl"></div>
       <Container className="py-16 space-y-6 relative">
