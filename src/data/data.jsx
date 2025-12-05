@@ -61,7 +61,7 @@ export const experience = [
         ]
     },
     {
-        title: "Junior Software Engineer",
+        title: "Software Engineer",
         company: "Nexdecade Technology Pvt. Ltd.",
         dates: "Aug 2023 — May 2025",
         location: "Panthapath, Dhaka, Bangladesh",

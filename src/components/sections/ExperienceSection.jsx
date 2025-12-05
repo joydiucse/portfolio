@@ -2,33 +2,44 @@ import React from 'react'
 import Container from '../../components/common/Container.jsx'
 import { experience } from '../../data/data.jsx'
 
-function ExperienceCard({ item }) {
+function TimelineItem({ item, index }) {
+  const colors = ['bg-primary', 'bg-secondary', 'bg-rose-600', 'bg-teal-600']
+  const dotColor = colors[index % colors.length]
   return (
-    <div className="bg-white rounded-2xl ring-1 ring-gray-200 p-6">
-      <div className="font-semibold">{item.title}</div>
-      <div className="text-sm text-gray-600">{item.company} • {item.dates}</div>
-      <ul className="mt-3 space-y-2 text-sm text-gray-700">
-        {item.bullets.slice(0, 3).map((b, i) => (
-          <li key={i}>• {b}</li>
-        ))}
-      </ul>
+    <div className="grid grid-cols-[1fr_64px_1fr] items-start gap-4">
+      <div className="text-right sm:pr-4">
+        <div className="font-semibold">{item.company}</div>
+        <div className="text-sm text-gray-600">{item.dates}</div>
+      </div>
+      <div className="fcc relative">
+        <div className="size-5 rounded-full ring-4 ring-white dark:ring-gray-700 shadow-sm border border-gray-300 fcc bg-primary-xlight">
+          <div className={`size-2.5 rounded-full ${dotColor}`}></div>
+        </div>
+      </div>
+      <div className="sm:pl-4">
+        <div className="font-semibold">{item.title}</div>
+        <p className="text-sm text-gray-700 mt-1">{item.bullets[0]}</p>
+      </div>
     </div>
   )
 }
 
 function ExperienceSection() {
+  const items = experience.slice(0, 4)
   return (
-      <div className={'bg-primary-xlight'}>
-          <Container className="py-12" id="experience">
-              <h3 className="text-2xl font-bold mb-6 text-center">My Work Experience</h3>
-              <div className="grid lg:grid-cols-2 gap-6">
-                  {experience.slice(0, 4).map((item) => (
-                      <ExperienceCard key={`${item.title}-${item.dates}`} item={item} />
-                  ))}
-              </div>
-          </Container>
-      </div>
-
+    <div className={'bg-primary-xlight'}>
+      <Container className="py-12" id="experience">
+        <h3 className="text-2xl font-bold mb-8 text-center">My Work Experience</h3>
+        <div className="relative">
+          <div className="absolute left-1/2 top-0 -translate-x-1/2 h-full border-l-2 border-dashed border-gray-300"></div>
+          <div className="space-y-8">
+            {items.map((item, idx) => (
+              <TimelineItem key={`${item.title}-${item.dates}`} item={item} index={idx} />
+            ))}
+          </div>
+        </div>
+      </Container>
+    </div>
   )
 }
 
