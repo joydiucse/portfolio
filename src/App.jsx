@@ -1,23 +1,16 @@
-
-
-import Sidebar from "./components/Sidebar"
-import ExperienceTimeline from "./components/ExperienceTimeline"
-import ProjectsList from "./components/ProjectsList"
-import Writings from "./components/Writings"
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/layouts/Layout.jsx";
+import HomePage from "./pages/homepage/HomePage.jsx";
 
 function App() {
-  return (
-    <div className="font-sans bg-secondary min-h-screen text-blue-100">
-      <Sidebar />
-      <main className="md:ml-[320px] lg:ml-[380px] px-6 md:px-10 py-10">
-        <div className="mx-auto max-w-3xl space-y-16">
-          <ExperienceTimeline />
-          <ProjectsList />
-          <Writings />
-        </div>
-      </main>
-    </div>
-  )
+
+    return (
+        <Routes>
+            <Route element={<Layout />}>
+                <Route path="/" element={<HomePage />} />
+            </Route>
+        </Routes>
+    )
 }
 
 export default App

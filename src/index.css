@@ -1,6 +1,88 @@
+@config "../tailwind.config.js";
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #2563eb;
-  --color-secondary: #0b1739;
+    --color-primary: oklch(59.6% 0.145 163.225);
+    --color-primary-dark: oklch(0.476 0.105 161.281);
+    --color-primary-xlight: #f6f9f9;
+    --color-secondary: #f59e0b;
 }
+
+.dark {
+    --color-primary: oklch(59.6% 0.145 163.225);
+    --color-primary-dark: oklch(59.6% 0.145 163.225);
+    --color-primary-xlight: #09101f;
+    --color-secondary: #fbbf24;
+}
+
+.bg-body{
+    @apply bg-white dark:bg-gray-950
+}
+
+.fc{
+    @apply flex items-center;
+}
+
+.fcb{
+    @apply flex items-center justify-between;
+}
+
+.fcc{
+    @apply flex items-center justify-center;
+}
+
+.fcs{
+    @apply flex items-center justify-start;
+}
+
+.fce{
+    @apply flex items-center justify-end;
+}
+
+.fss{
+    @apply flex items-start justify-start;
+}
+
+.fsb{
+    @apply flex items-start justify-between;
+}
+
+.fse{
+    @apply flex items-start justify-end;
+}
+
+.fes{
+    @apply flex items-end justify-start;
+}
+
+.feb{
+    @apply flex items-end justify-between;
+}
+
+.fee{
+    @apply flex items-end justify-end;
+}
+
+
+.sample-border{
+    @apply border border-gray-100 dark:border-gray-900 hover:border-gray-200 hover:dark:border-gray-800 duration-200
+}
+
+.text-border-design {
+    @apply relative inline-block;
+}
+
+.text-border-design::after {
+    content: "";
+    @apply absolute left-0 -bottom-1 w-20 h-[3px] bg-secondary;
+}
+
+.image-cover{
+    @apply w-full h-full object-cover
+}
+
+@keyframes draw { from { stroke-dashoffset: 100 } to { stroke-dashoffset: 0 } }
+.animate-draw { stroke-dasharray: 100; stroke-dashoffset: 100; animation: draw 2.2s ease-out forwards }
+
+@keyframes oscillate { 0% { transform: translateX(0) } 50% { transform: translateX(8px) } 100% { transform: translateX(0) } }
+.animate-oscillate { animation: oscillate 4s ease-in-out infinite }

@@ -1,0 +1,35 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.1.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            echo "======================================"
+            echo "SSH Connection Successful......"
+            cd /var/www/joynal.me/portfolio
+            git stash
+            git pull origin master
+            /root/.nvm/versions/node/v24.11.1/bin/npm i
+            echo "Build Started......"
+            echo "======================================"
+            /root/.nvm/versions/node/v24.11.1/bin/npm run build
+            echo "======================================"
+            echo "Build Completed"
+            echo "======================================"
