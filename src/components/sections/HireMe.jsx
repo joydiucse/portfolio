@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from '../../components/common/Container.jsx'
-import {profile, social} from '../../data/data.jsx'
+import {profile} from '../../data/data.jsx'
 import {ReactIcon} from '../common/Icons.jsx'
+import {PrimaryButton} from "../common/Buttons.jsx";
 
-export const highlights = [
+const highlights = [
     {
         icon: "web",
         title: "Clean Architecture",
@@ -28,11 +29,17 @@ export const highlights = [
 ]
 
 function HireMe() {
-  const name = profile?.fullName || profile?.name || profile?.shortName || 'Hire Me'
-  const role = profile?.role || ''
   const email = profile?.email || ''
   const phone = profile?.phone || ''
-  const availability = 'Immediately available'
+  const [title, setTitle] = useState('')
+  const [details, setDetails] = useState('')
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const subject = encodeURIComponent(title || 'Project Proposal')
+    const body = encodeURIComponent(details || '')
+    const href = `mailto:${email}?subject=${subject}&body=${body}`
+    window.location.href = href
+  }
 
   return (
     <div className="">
@@ -78,7 +85,35 @@ function HireMe() {
                   </div>
                 </div>
                 <div className="space-y-3">
-
+                  <div className="text-sm font-medium">Send me a proposal</div>
+                  <form onSubmit={handleSubmit} className="space-y-3">
+                    <div>
+                      <input
+                        type="text"
+                        value={title}
+                        onChange={(e) => setTitle(e.target.value)}
+                        placeholder="Title"
+                        required
+                        className="w-full px-3 py-2 rounded-lg bg-white dark:bg-gray-950 ring-1 ring-gray-200 dark:ring-gray-700 text-gray-900 dark:text-gray-200 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary"
+                      />
+                    </div>
+                    <div>
+                      <textarea
+                        value={details}
+                        onChange={(e) => setDetails(e.target.value)}
+                        placeholder="Details"
+                        required
+                        rows={4}
+                        className="w-full px-3 py-2 rounded-lg bg-white dark:bg-gray-950 ring-1 ring-gray-200 dark:ring-gray-700 text-gray-900 dark:text-gray-200 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary"
+                      />
+                    </div>
+                    <div className="fce">
+                        <PrimaryButton>
+                            <ReactIcon name={'right-arrow'} />
+                            <span>Send Proposal</span>
+                        </PrimaryButton>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
