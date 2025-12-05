@@ -7,11 +7,41 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 
 const testimonials = [
-  { name: 'John Allendale', role: 'Creative manager', quote: 'A complete search of the internet has found the mostsearch of the internet has found the most search of the internet has found the most popular phrase on the web has found the most popular phrase on the web', avatar: 'https://i.pravatar.cc/80?img=12', color: 'bg-yellow-400' },
-  { name: 'Ava Thompson', role: 'Product lead', quote: 'I got a job that was in accordance with the story of the world', avatar: 'https://i.pravatar.cc/80?img=32', color: 'bg-emerald-500' },
-  { name: 'Michael Chen', role: 'CTO', quote: 'Clean design and fast delivery. Great collaboration throughout.', avatar: 'https://i.pravatar.cc/80?img=3', color: 'bg-rose-500' },
-  { name: 'Michael Chen', role: 'CTO', quote: 'Clean design and fast delivery. Great collaboration throughout.', avatar: 'https://i.pravatar.cc/80?img=3', color: 'bg-rose-500' },
-  { name: 'Michael Chen', role: 'CTO', quote: 'Clean design and fast delivery. Great collaboration throughout.', avatar: 'https://i.pravatar.cc/80?img=3', color: 'bg-rose-500' },
+  {
+    name: 'John Allendale',
+    role: 'Creative manager',
+    quote: 'A complete search of the internet has found the mostsearch of the internet has found the most search of the internet has found the most popular phrase on the web has found the most popular phrase on the web',
+    avatar: 'https://i.pravatar.cc/80?img=12',
+    color: 'bg-yellow-400'
+  },
+  {
+    name: 'Ava Thompson',
+    role: 'Product lead',
+    quote: 'I got a job that was in accordance with the story of the world',
+    avatar: 'https://i.pravatar.cc/80?img=32',
+    color: 'bg-emerald-500'
+  },
+  {
+    name: 'Michael Chen',
+    role: 'CTO',
+    quote: 'Clean design and fast delivery. Great collaboration throughout.',
+    avatar: 'https://i.pravatar.cc/80?img=3',
+    color: 'bg-rose-500'
+  },
+  {
+    name: 'Michael Chen',
+    role: 'CTO',
+    quote: 'Clean design and fast delivery. Great collaboration throughout.',
+    avatar: 'https://i.pravatar.cc/80?img=3',
+    color: 'bg-rose-500'
+  },
+  {
+    name: 'Michael Chen',
+    role: 'CTO',
+    quote: 'Clean design and fast delivery. Great collaboration throughout.',
+    avatar: 'https://i.pravatar.cc/80?img=3',
+    color: 'bg-rose-500'
+  },
 ]
 
 function Testimonials() {
