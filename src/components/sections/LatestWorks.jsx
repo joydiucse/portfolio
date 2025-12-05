@@ -21,7 +21,7 @@ function LatestWorks() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-6">
                 {latestProjects.map((item) => (
-                    <div key={item.title} className={`rounded-xl p-4 h-[280px] sm:h-[320px] border border-gray-200 relative overflow-hidden shadow-lg hover:shadow-xl`}>
+                    <div key={item.title} className={`rounded-xl p-4 h-[280px] sm:h-[320px] border border-gray-200 dark:border-gray-800 relative overflow-hidden shadow-lg hover:shadow-xl`}>
                         <div className="absolute inset-0 pointer-events-none">
                             <div className={`absolute -left-14 -top-14 size-56 rounded-full bg-white/10 blur-xl`}></div>
                             <div className={`absolute right-6 top-6 w-40 h-56 rounded-xl ${item.background} `}></div>

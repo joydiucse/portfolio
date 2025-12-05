@@ -1,28 +1,63 @@
 import React from 'react'
 import Container from '../../components/common/Container.jsx'
+import { Image } from '../../utils/Global.jsx'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/pagination'
 
 const testimonials = [
-  { name: 'John Allendale', role: 'Creative manager', quote: 'A complete search of the internet has found the most popular phrase on the web' },
-  { name: 'Ava Thompson', role: 'Product lead', quote: 'I got a job that was in accordance with the story of the world' },
-  { name: 'Michael Chen', role: 'CTO', quote: 'Clean design and fast delivery. Great collaboration throughout.' },
+  { name: 'John Allendale', role: 'Creative manager', quote: 'A complete search of the internet has found the most popular phrase on the web has found the most popular phrase on the web', avatar: 'https://i.pravatar.cc/80?img=12', color: 'bg-yellow-400' },
+  { name: 'Ava Thompson', role: 'Product lead', quote: 'I got a job that was in accordance with the story of the world', avatar: 'https://i.pravatar.cc/80?img=32', color: 'bg-emerald-500' },
+  { name: 'Michael Chen', role: 'CTO', quote: 'Clean design and fast delivery. Great collaboration throughout.', avatar: 'https://i.pravatar.cc/80?img=3', color: 'bg-rose-500' },
+  { name: 'Michael Chen', role: 'CTO', quote: 'Clean design and fast delivery. Great collaboration throughout.', avatar: 'https://i.pravatar.cc/80?img=3', color: 'bg-rose-500' },
+  { name: 'Michael Chen', role: 'CTO', quote: 'Clean design and fast delivery. Great collaboration throughout.', avatar: 'https://i.pravatar.cc/80?img=3', color: 'bg-rose-500' },
 ]
 
 function Testimonials() {
   return (
-      <div className={'bg-primary-xlight'}>
-          <Container className="py-12 ">
-              <h3 className="text-2xl font-bold mb-6 sm:text-center">People talk about me</h3>
-              <div className="grid lg:grid-cols-3 gap-6">
-                  {testimonials.map((t) => (
-                      <div key={t.name} className="bg-white rounded-2xl ring-1 ring-gray-200 p-6">
-                          <p className="text-gray-700">{t.quote}</p>
-                          <div className="mt-4 text-sm text-gray-600">{t.name} • {t.role}</div>
-                      </div>
-                  ))}
+    <div className={'bg-primary-xlight'}>
+      <Container className="py-12">
+        <h3 className="text-2xl font-bold mb-3 sm:text-center">People talk about us</h3>
+        <p className="sm:text-center text-gray-600 mb-6">I got a job that was in accordance with the story of the world</p>
+        <style>{`
+          .testimonial-card { transition: transform .35s ease, box-shadow .35s ease; }
+          .swiper-slide-active .testimonial-card {   }
+          .swiper-pagination-bullet { width: 10px; height: 10px; transition: transform .3s ease, background-color .3s ease; }
+          .swiper-pagination-bullet-active { transform: scale(1.25); background-color: #009966; }
+        `}</style>
+        <Swiper
+          modules={[Pagination]}
+          pagination={{ clickable: true }}
+          spaceBetween={16}
+          breakpoints={{ 0: { slidesPerView: 1 }, 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }}
+        >
+          {testimonials.map((t) => (
+            <SwiperSlide key={t.name}>
+              <div className="py-10">
+              <div className="relative overflow-visible">
+                <div className="absolute -top-8 left-1/2 -translate-x-1/2 z-20">
+                  <div className={`size-12 rounded-full ${t.color} grid place-items-center ring-4 ring-white drop-shadow-md`}></div>
+                  <div className="absolute inset-0 rounded-full overflow-hidden">
+                    <Image src={t.avatar} className="size-12 object-cover rounded-full" />
+                  </div>
+                </div>
+                <div className="testimonial-card relative z-10 bg-white rounded-3xl ring-1 ring-gray-200 pt-10 text-center h-48 flex flex-col justify-between">
+                  <div className="grow px-6 pb-2 fcc">
+                    <p className="text-gray-700 text-sm">{t.quote}</p>
+                  </div>
+                  <div className="border-t border-gray-200 py-3">
+                    <div className="font-semibold">{t.name}</div>
+                    <div className="text-sm text-gray-600">{t.role}</div>
+                  </div>
+                </div>
               </div>
-          </Container>
-      </div>
-
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </Container>
+    </div>
   )
 }
 
