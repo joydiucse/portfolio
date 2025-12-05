@@ -52,6 +52,7 @@ export const experience = [
         company: "Nexdecade Technology Pvt. Ltd.",
         dates: "Apr 2025 — Present",
         location: "Panthapath, Dhaka, Bangladesh",
+        summary: "Led architecture, development, and deployment of scalable web applications using Node.js, Laravel, React, and Next.js. Engineered microservices and REST APIs, optimized databases, implemented CI/CD pipelines, and strengthened security measures to improve performance, throughput, and compliance.",
         bullets: [
             "Led architecture, development, and deployment of high-traffic web applications using Node.js, Laravel, React, and Next.js, improving scalability and response time by 35%.",
             "Engineered microservices and RESTful APIs with API Gateway, asynchronous processing, and service orchestration, reducing latency by 40% and increasing throughput by 50%.",
@@ -65,6 +66,7 @@ export const experience = [
         company: "Nexdecade Technology Pvt. Ltd.",
         dates: "Aug 2023 — May 2025",
         location: "Panthapath, Dhaka, Bangladesh",
+        summary: "Developed modular full-stack applications with Laravel, React, and Node.js, integrating REST APIs and third-party services. Optimized database performance, collaborated under Agile/Scrum, and implemented comprehensive testing to ensure high-quality, efficient, and maintainable systems.",
         bullets: [
             "Delivered modular full-stack applications with Laravel, React, and Node.js, following MVC and scalable design principles.",
             "Built and integrated RESTful APIs and third-party services (payment, analytics, messaging) to enhance system integration.",
@@ -78,6 +80,7 @@ export const experience = [
         company: "MoveXCourier",
         dates: "Feb 2023 — Jul 2023",
         location: "Dhaka, Bangladesh",
+        summary: "Built courier management and tracking web applications using Laravel, implementing secure authentication, role-based access control, and third-party integrations. Designed efficient database schemas and optimized queries to ensure reliable and performant systems.",
         bullets: [
             "Developed courier management and tracking web applications using Laravel MVC architecture.",
             "Implemented authentication, authorization, and role-based access control for secure data handling.",
@@ -90,6 +93,7 @@ export const experience = [
         company: "Dhamrai Prince Polytechnic & Medical Institute",
         dates: "Sep 2019 — May 2023",
         location: "Dhamrai, Dhaka, Bangladesh",
+        summary: "Developed accounting and student management systems with Laravel and PHP, implementing full-stack MVC features and deploying cloud-hosted applications. Taught SDLC, OOP, and modern web development, mentoring students on practical projects.",
         bullets: [
             "Developed accounting and student management systems with Laravel, PHP, and MySQL, streamlining operations.",
             "Implemented full-stack MVC features including authentication, CRUD operations, and responsive UI.",
