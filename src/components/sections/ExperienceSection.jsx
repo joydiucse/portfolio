@@ -7,7 +7,7 @@ function TimelineItem({ item, index }) {
   const dotColor = colors[index % colors.length]
   return (
     <div className="grid grid-cols-[64px_1fr] sm:grid-cols-[1fr_64px_1fr] items-start gap-4">
-      <div className="text-right pr-4 hidden sm:block">
+      <div className="text-right pr-0 sm:pr-4 hidden sm:block">
         <div className="font-semibold">{item.company}</div>
         <div className="text-sm text-gray-600">{item.dates}</div>
       </div>
@@ -16,10 +16,11 @@ function TimelineItem({ item, index }) {
           <div className={`size-3 rounded-full ${dotColor}`}></div>
         </div>
       </div>
-      <div className="pl-4">
-        <div className="sm:hidden text-sm text-gray-600 mb-1"><span className="font-medium">{item.company}</span> • {item.dates}</div>
+      <div className="sm:pl-4">
+        <div className="sm:hidden text-sm text-gray-600 dark:text-gray-400 font-semibold mb-1"><span className="font-medium">{item.company}</span></div>
+        <div className="sm:hidden text-sm text-gray-600 dark:text-gray-400  mb-1">• {item.dates}</div>
         <div className="font-semibold">{item.title}</div>
-        <p className="text-sm text-gray-700 mt-1">{item.bullets[0]}</p>
+        <p className="text-sm text-gray-700 dark:text-gray-500  mt-1">{item.bullets[0]}</p>
       </div>
     </div>
   )
