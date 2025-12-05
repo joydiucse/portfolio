@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from '../../components/common/Container.jsx'
 import { Image } from '../../utils/Global.jsx'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -6,6 +6,8 @@ import { Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import {image} from "../../utils/media.js";
+import { Dialog, DialogTitle, DialogContent, DialogActions, Button } from '@mui/material'
+import {ReactIcon} from "../common/Icons.jsx";
 
 const testimonials = [
   {
@@ -42,6 +44,10 @@ const testimonials = [
 ]
 
 function Testimonials() {
+  const [open, setOpen] = useState(false)
+  const [selected, setSelected] = useState(null)
+  const handleOpen = (t) => { setSelected(t); setOpen(true) }
+  const handleClose = () => setOpen(false)
   return (
     <div className={'bg-primary-xlight'}>
       <Container className="py-12">
@@ -72,7 +78,7 @@ function Testimonials() {
                     <Image src={t.avatar} className="size-12 object-cover rounded-full"/>
                   </div>
                 </div>
-                <div className="testimonial-card relative z-10 bg-white dark:bg-gray-900 px-8 rounded-3xl ring-1 ring-gray-200 dark:ring-0 pt-10 text-center h-48 flex flex-col justify-between">
+                <div className="testimonial-card relative z-10 bg-white dark:bg-gray-900 px-8 rounded-3xl ring-1 ring-gray-200 dark:ring-0 pt-10 text-center h-48 flex flex-col justify-between cursor-pointer" onClick={() => handleOpen(t)}>
                   <div className="grow pb-2 fcc">
                     <p className="text-gray-700 dark:text-gray-300 text-sm line-clamp-5">{t.statement}</p>
                   </div>
@@ -89,6 +95,35 @@ function Testimonials() {
             </SwiperSlide>
           ))}
         </Swiper>
+        <Dialog open={open} onClose={handleClose} fullWidth maxWidth="sm">
+          <DialogTitle>{selected?.name} • {selected?.role}</DialogTitle>
+          <DialogContent dividers>
+            <div className="grid grid-cols-4 ">
+              <div className="fcc">
+                <Image src={selected?.avatar} className="size-16 object-cover rounded-full ring-2 ring-gray-200" />
+              </div>
+              <div className="col-span-3 border-l border-gray-300  dark:border-gray-500 pl-6">
+                <p className={'font-semibold'}>{selected?.name}</p>
+                <p className={'text-sm'}>
+                  • {selected?.role} {selected?.company && <span>({selected?.company})</span>}
+                </p>
+                <div className="mt-3 relative">
+                  <div className="absolute -top-4 -left-4 text-6xl opacity-20">
+                    <ReactIcon name={'single-quote'}/>
+                  </div>
+                  <p className="relative z-10 text-sm text-gray-800 dark:text-gray-200">{selected?.statement}</p>
+                </div>
+
+              </div>
+            </div>
+
+
+
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={handleClose} variant="contained">Close</Button>
+          </DialogActions>
+        </Dialog>
       </Container>
     </div>
   )
