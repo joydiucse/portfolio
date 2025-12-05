@@ -89,8 +89,8 @@ export const experience = [
         ]
     },
     {
-        title: "Junior Instructor",
-        company: "Dhamrai Prince Polytechnic & Medical Institute",
+        title: "Web Instructor",
+        company: "Dhamrai Prince Polytechnic Institute",
         dates: "Sep 2019 — May 2023",
         location: "Dhamrai, Dhaka, Bangladesh",
         summary: "Developed accounting and student management systems with Laravel and PHP, implementing full-stack MVC features and deploying cloud-hosted applications. Taught SDLC, OOP, and modern web development, mentoring students on practical projects.",
