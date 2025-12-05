@@ -9,18 +9,19 @@ import Testimonials from '../../components/sections/Testimonials.jsx'
 import CTASection from '../../components/sections/CTASection.jsx'
 
 function HomePage() {
-  return (
-    <div className="">
-      <Hero />
-      <Service />
-      {/*<StatsBar />
+    return (
+        <div className="">
+            <Hero/>
+            <Service/>
+            <ExperienceSection/>
+            {/*<StatsBar />
       <ServicesList />
       <ExperienceSection />
       <LatestWorks />
       <Testimonials />
       <CTASection />*/}
-    </div>
-  );
+        </div>
+    );
 }
 
 export default HomePage;
