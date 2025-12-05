@@ -236,12 +236,6 @@ export const certifications = [
     }
 ]
 
-export const additional = [
-    {label: "Languages", value: "Bangla (Native), English (Fluent)"},
-    {label: "Availability", value: "Immediately available"},
-    {label: "Technical Interests", value: "AI/ML Research, Open Source, System Architecture"}
-]
-
 export const social = [
     {label: "Email", href: "mailto:" + profile.email},
     {label: "LinkedIn", href: profile.linkedin},
@@ -249,49 +243,4 @@ export const social = [
     {label: "Phone", href: "tel:+8801785893609"}
 ]
 
-export const stats = [
-    {label: "Avg. client rating", value: "4.8"},
-    {label: "Projects delivered", value: "364"},
-    {label: "Total users reached", value: "45M+"}
-]
 
-export const services = [
-    {title: "UX & Product", description: "User-centric journeys and flows.", price: "$129"},
-    {title: "Performance & DevOps", description: "Fast, reliable, observable apps.", price: "$149"},
-    {title: "UI & Prototyping", description: "Pixel-perfect design systems.", price: "$119"}
-]
-
-export const portfolio = [
-    {title: "Cryptoverse", tag: "Branding", image: "https://placehold.co/400x300/png"},
-    {title: "Metro", tag: "Illustration", image: "https://placehold.co/400x300/png"},
-    {title: "Everyday Patterns", tag: "Concept", image: "https://placehold.co/400x300/png"},
-    {title: "Product Logos", tag: "Logo", image: "https://placehold.co/400x300/png"},
-    {title: "Rendered Apparel", tag: "3D", image: "https://placehold.co/400x300/png"}
-]
-
-export const blog = [
-    {title: "Business across the stack", tag: "Insights", image: "https://placehold.co/320x200/png", date: "Nov 2025"},
-    {
-        title: "How to write a rock-solid API",
-        tag: "Best Practices",
-        image: "https://placehold.co/320x200/png",
-        date: "Oct 2025"
-    },
-    {title: "Grow through observability", tag: "DevOps", image: "https://placehold.co/320x200/png", date: "Sep 2025"}
-]
-
-export default {
-    profile,
-    summary,
-    skills,
-    experience,
-    projects: latestProjects,
-    education,
-    certifications,
-    additional,
-    social,
-    stats,
-    services,
-    portfolio,
-    blog
-}
