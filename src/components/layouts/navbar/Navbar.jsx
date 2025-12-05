@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import {FiArrowRight, FiMoon, FiSun} from 'react-icons/fi';
+import {FiMoon, FiSun} from 'react-icons/fi';
 import Container from "../../common/Container.jsx";
 import {profile} from "../../../data/data.jsx";
 import {Image, image} from "../../../utils/Global.jsx";
 import {AnimatePing} from "../../common/Animate.jsx";
-import {Button} from "@mui/material";
 import {PrimaryButton} from "../../common/Buttons.jsx";
+import {ReactIcon} from "../../common/Icons.jsx";
 
 function Navbar() {
 
@@ -63,7 +63,7 @@ function Navbar() {
                                 {theme === 'dark' ? <FiSun /> : <FiMoon />}
                             </button>
                             <PrimaryButton>
-                                <span>Hire Me</span> <FiArrowRight/>
+                                <span>Hire Me</span> <ReactIcon name={'right-arrow'}/>
                             </PrimaryButton>
                         </div>
                     </div>

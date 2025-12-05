@@ -14,6 +14,8 @@ function HomePage() {
             <Hero/>
             <Service/>
             <ExperienceSection/>
+            <LatestWorks />
+
             {/*<StatsBar />
       <ServicesList />
       <ExperienceSection />

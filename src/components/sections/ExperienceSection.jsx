@@ -31,7 +31,7 @@ function ExperienceSection() {
   return (
     <div className={'bg-primary-xlight'}>
       <Container className="py-12" id="experience">
-        <h3 className="text-2xl font-bold mb-8 sm;text-center">My Work Experience</h3>
+        <h3 className="text-2xl font-bold mb-8 sm:text-center">My Work Experience</h3>
         <div className="relative">
           <div className="absolute left-[8px] top-0 h-full border-l-2 border-dashed border-gray-300 dark:border-gray-700 sm:hidden"></div>
           <div className="absolute left-1/2 top-0 -translate-x-1/2 h-full border-l-2 border-dashed border-gray-300 dark:border-gray-700 hidden sm:block"></div>

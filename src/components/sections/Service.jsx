@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../../components/common/Container.jsx'
-import {ReactIcon} from "../Icons.jsx";
 import {Link} from "react-router-dom";
+import {ReactIcon} from "../common/Icons.jsx";
 
 const data = [
     {
@@ -84,7 +84,7 @@ function Service() {
             <div className="lg:col-span-2 flex items-center">
               <div className="space-y-6 w-full">
 
-                <div className="font-medium text-border-design space-y-1">
+                <div className="font-medium text-border-design-secondary space-y-1">
                   <p className="text-2xl md:text-3xl">What do I</p>
                   <p className="text-4xl md:text-5xl text-primary-dark">Service?</p>
                 </div>

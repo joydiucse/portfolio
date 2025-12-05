@@ -68,14 +68,36 @@
     @apply border border-gray-100 dark:border-gray-900 hover:border-gray-200 hover:dark:border-gray-800 duration-200
 }
 
+.text-border-design-secondary {
+    @apply relative inline-block;
+}
+
+.text-border-design-secondary::after {
+    content: "";
+    @apply absolute left-0 -bottom-1 w-20 h-[3px] bg-secondary;
+}
+
 .text-border-design {
     @apply relative inline-block;
 }
 
 .text-border-design::after {
     content: "";
-    @apply absolute left-0 -bottom-1 w-20 h-[3px] bg-secondary;
+    @apply absolute left-0 -bottom-1 w-20 h-[3px] bg-primary;
 }
+
+
+.hover-border{
+    @apply relative;
+}
+.hover-border::after {
+    content: "";
+    @apply absolute left-0 -bottom-0 w-0 h-[2px] bg-primary duration-300 rounded;
+}
+.hover-border:hover::after {
+    @apply  w-full;
+}
+
 
 .image-cover{
     @apply w-full h-full object-cover
