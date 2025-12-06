@@ -9,10 +9,10 @@ export const profile = {
     role: "Senior Software Engineer",
     summary: "6+ years in full-stack development, system architecture, and database optimization",
     phone: "+88 01785 893609",
+    phoneValue: "+8801785893609",
     email: "joy.diu.cse@gmail.com",
-    linkedin: "https://linkedin.com/in/joynal-abedin-cse",
-    github: "https://github.com/joydiucse",
-    location: "Amin Bazar, Savar, Dhaka, Bangladesh"
+    location: "Amin Bazar, Savar, Dhaka, Bangladesh",
+    image: image('joy-square.jpg')
 }
 
 export const summary = "Results-driven Senior Software Engineer with 6+ years in full-stack development, system architecture, and database optimization. Expert in designing scalable, high-performance web applications using PHP, Laravel, Node.js, Express.js, React, and Next.js, with strong MySQL, PostgreSQL, and MongoDB expertise. Skilled in microservices, API design, and cloud-native deployments. Proven success optimizing performance, leading cross-functional teams, and delivering secure, maintainable solutions that drive business growth."
@@ -237,10 +237,10 @@ export const certifications = [
 ]
 
 export const social = [
-    {label: "Email", href: "mailto:" + profile.email},
-    {label: "LinkedIn", href: profile.linkedin},
-    {label: "GitHub", href: profile.github},
-    {label: "Phone", href: "tel:+8801785893609"}
+    {label: "Email", value:profile.email, href: `mailto:${profile.email}`},
+    {label: "Phone", value:profile.phone, href: `tel:${profile?.phoneValue}`},
+    {label: "LinkedIn", value:profile.linkedin, href: profile.linkedin},
+    {label: "GitHub", value:profile.github, href: profile.github},
 ]
 
 

@@ -82,7 +82,7 @@ function Service() {
 
             {/* RIGHT SECTION */}
             <div className="lg:col-span-2 flex items-center">
-              <div className="space-y-6 w-full">
+              <div className="space-y-6 w-full py-4 sm:py-0">
 
                 <div className="font-medium text-border-design-secondary space-y-1">
                   <p className="text-2xl md:text-3xl">What do I</p>

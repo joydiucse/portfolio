@@ -18,6 +18,9 @@
 .bg-body{
     @apply bg-white dark:bg-gray-950
 }
+.bg-body-reverse{
+    @apply bg-gray-950 dark:bg-white
+}
 
 .fc{
     @apply flex items-center;

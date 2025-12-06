@@ -57,7 +57,7 @@ function Testimonials() {
           .testimonial-card, .testimonial-card-avater { transition: transform .35s ease, box-shadow .35s ease; }
           .swiper-slide-active .testimonial-card-avater { transform: translateY(-40px); box-shadow: 0 16px 28px rgba(0,0,0,.08); }
           .swiper-slide-active .testimonial-card { transform: translateY(-40px); box-shadow: 0 16px 28px rgba(0,0,0,.08); }
-          .swiper-pagination-bullet { width: 10px; height: 10px; transition: transform .3s ease, background-color .3s ease; }
+          .swiper-pagination-bullet { width: 10px; height: 10px; background-color: #009966; transition: transform .3s ease, background-color .3s ease; }
           .swiper-pagination-bullet-active { transform: scale(1.25); background-color: #009966; }
           .swiper-pagination { transform: translateY(-32px); }
         `}</style>

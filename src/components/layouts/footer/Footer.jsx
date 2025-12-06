@@ -2,6 +2,7 @@ import React from 'react'
 import Container from '../../common/Container.jsx'
 import {profile, social} from '../../../data/data.jsx'
 import {ReactIcon} from '../../common/Icons.jsx'
+import {Image} from "../../../utils/Global.jsx";
 
 function Footer() {
   const iconFor = (label) => {
@@ -18,30 +19,38 @@ function Footer() {
       <div className="absolute -left-20 -top-24 size-80 rounded-full bg-primary/10 blur-2xl"></div>
       <div className="absolute right-[-40px] bottom-[-40px] size-80 rounded-full bg-secondary/10 blur-2xl"></div>
       <Container className="py-16 space-y-6 relative">
-        <div className="fcb flex-wrap gap-6">
-          <div className="space-y-1">
+        <div className="grid sm:grid-cols-5 items-center gap-6">
+          <div className="col-span-2 space-y-1">
+            <figure className={'size-16 rounded border-2'}>
+              <Image src={profile?.image} className={'image-cover'}/>
+            </figure>
             <div className="text-xl sm:text-2xl font-semibold">{profile?.fullName || profile?.name || 'Portfolio'}</div>
             <div className="text-sm text-gray-600 dark:text-gray-400">{profile?.role}</div>
+            <div className="w-16 h-0.5 bg-gray-500"></div>
+            <div className="mt-4 text-sm text-gray-600 dark:text-gray-400">{profile?.summary}</div>
           </div>
-          <div className="space-y-2">
+          <div className=""></div>
+          <div className="col-span-2 space-y-2">
             <h3 className={'text-lg font-medium'}>Find me in:</h3>
-            <div className="fcc gap-3 flex-wrap">
+            <div className="space-y-3">
               {social.map((s, idx) => {
                 const name = iconFor(s.label)
                 const external = String(s.href || '').startsWith('http')
                 return (
-                    <a
-                        key={`${s.label}-${idx}`}
-                        href={s.href}
-                        target={external ? '_blank' : undefined}
-                        rel={external ? 'noopener noreferrer' : undefined}
-                        className="inline-flex items-center gap-2 pl-0.5 pr-4 py-0.5 rounded-full ring-1 ring-gray-200 dark:ring-gray-800 bg-white dark:bg-gray-950 text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-900 hover:ring-gray-300 dark:hover:ring-gray-700 shadow-sm hover:shadow-md transition"
-                    >
-                  <span className="size-8 rounded-full fcc bg-primary/10 dark:bg-primary/20">
-                    <ReactIcon name={name} className="text-primary" />
-                  </span>
-                      <span className="text-sm font-medium">{s.label}</span>
-                    </a>
+                    <div key={`${s.label}-${idx}`}>
+                      <a
+
+                          href={s.href}
+                          target={external ? '_blank' : undefined}
+                          rel={external ? 'noopener noreferrer' : undefined}
+                          className="fc gap-2"
+                      >
+                    <span className="size-6 rounded-full fcc bg-primary/10 dark:bg-primary/20">
+                      <ReactIcon name={name} className="text-primary text-sm" />
+                    </span>
+                        <span className="text-sm font-medium">{s.value}</span>
+                      </a>
+                    </div>
                 )
               })}
             </div>
@@ -49,14 +58,14 @@ function Footer() {
 
         </div>
       </Container>
-      <div className="bg-gray-900 py-3">
+      {/*<div className="bg-gray-900 py-3">
         <Container>
           <div className="fcb">
             <div className="text-sm text-gray-300 dark:text-gray-400">© {new Date().getFullYear()} {profile?.fullName || profile?.name || 'Portfolio'}</div>
             <div className="text-sm text-gray-300 dark:text-gray-400">All rights reserved.</div>
           </div>
         </Container>
-      </div>
+      </div>*/}
     </footer>
   )
 }
