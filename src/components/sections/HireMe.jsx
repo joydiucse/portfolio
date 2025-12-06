@@ -30,7 +30,6 @@ const highlights = [
 
 function HireMe() {
     const email = profile?.email || ''
-    const phone = profile?.phone || ''
     const [title, setTitle] = useState('')
     const [details, setDetails] = useState('')
     const handleSubmit = (e) => {
@@ -93,7 +92,7 @@ function HireMe() {
                       />
                                     </div>
                                     <div className="fce">
-                                        <PrimaryButton>
+                                        <PrimaryButton type="submit">
                                             <ReactIcon name={'right-arrow'}/>
                                             <span>Send Proposal</span>
                                         </PrimaryButton>
