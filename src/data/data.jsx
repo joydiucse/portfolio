@@ -12,6 +12,8 @@ export const profile = {
     phoneValue: "+8801785893609",
     email: "joy.diu.cse@gmail.com",
     location: "Amin Bazar, Savar, Dhaka, Bangladesh",
+    linkedin: "https://linkedin.com/in/joynal-abedin-cse",
+    github: "https://github.com/joydiucse",
     image: image('joy-square.jpg')
 }
 
