@@ -26,7 +26,7 @@ function Footer() {
             </figure>
             <div className="text-xl sm:text-2xl font-semibold">{profile?.fullName || profile?.name || 'Portfolio'}</div>
             <div className="text-sm text-gray-600 dark:text-gray-400">{profile?.role}</div>
-            <div className="w-16 h-0.5 bg-gray-500"></div>
+            <div className="w-16 h-0.5 bg-primary"></div>
             <div className="mt-4 text-sm text-gray-600 dark:text-gray-400">{profile?.summary}</div>
           </div>
           <div className=""></div>
