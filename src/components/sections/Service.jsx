@@ -50,7 +50,7 @@ function Service() {
 
 
     return (
-        <Container className="py-16">
+        <Container className="py-16" id="services">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
 
             {/* LEFT SECTION */}

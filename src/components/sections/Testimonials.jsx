@@ -50,7 +50,7 @@ function Testimonials() {
   const handleClose = () => setOpen(false)
   return (
     <div className={'bg-primary-xlight'}>
-      <Container className="py-12">
+      <Container className="py-12" id="testimonials">
         <h3 className="text-2xl font-bold mb-3 text-center">People talk about me</h3>
         <p className="text-center text-gray-600 mb-6">I got a job that was in accordance with the story of the world</p>
         <style>{`

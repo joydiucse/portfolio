@@ -38,9 +38,27 @@ function Navbar() {
     const toggleMenu = () => setMenuOpen((v) => !v);
     const closeMenu = () => setMenuOpen(false);
 
+    const sections = [
+        { label: 'Services', id: 'services' },
+        { label: 'Works', id: 'works' },
+        { label: 'Experience', id: 'experience' },
+        { label: 'Testimonials', id: 'testimonials' },
+        { label: 'Hire Me', id: 'hire-me' },
+    ];
+
+    const scrollTo = (id) => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const nav = document.getElementById('app-navbar');
+        const offset = nav ? nav.getBoundingClientRect().height : 72;
+        const y = el.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        closeMenu();
+    };
+
     return (
         <>
-            <div className="sticky top-0 z-50 bg-primary-xlight">
+            <div id="app-navbar" className="sticky top-0 z-50 bg-primary-xlight">
                 <Container className={'py-3'}>
                     <div className="fcb relative">
                         <Link to={'/'}>
@@ -59,10 +77,15 @@ function Navbar() {
 
 
                         <nav className="hidden sm:flex items-center gap-6 text-sm">
-                            <a href="#services" className="hover:text-teal-700">Services</a>
-                            <a href="#works" className="hover:text-teal-700">Works</a>
-                            <a href="#notes" className="hover:text-teal-700">Notes</a>
-                            <a href="#experience" className="hover:text-teal-700">Experience</a>
+                            {sections.map((s) => (
+                                <button
+                                    key={s.id}
+                                    onClick={() => scrollTo(s.id)}
+                                    className="hover:text-teal-700 cursor-pointer"
+                                >
+                                    {s.label}
+                                </button>
+                            ))}
                         </nav>
                         <div className="flex items-center gap-3">
                             <button
@@ -111,10 +134,15 @@ function Navbar() {
                         </div>
                         <div className="border-t border-gray-200 dark:border-gray-800"></div>
                         <nav className="px-4 py-3 flex flex-col gap-1 text-sm">
-                            <a href="#services" onClick={closeMenu} className="px-2 py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800">Services</a>
-                            <a href="#works" onClick={closeMenu} className="px-2 py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800">Works</a>
-                            <a href="#notes" onClick={closeMenu} className="px-2 py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800">Notes</a>
-                            <a href="#experience" onClick={closeMenu} className="px-2 py-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800">Experience</a>
+                            {sections.map((s) => (
+                                <button
+                                    key={s.id}
+                                    onClick={() => scrollTo(s.id)}
+                                    className="px-2 py-2 rounded text-left hover:bg-gray-100 dark:hover:bg-gray-800"
+                                >
+                                    {s.label}
+                                </button>
+                            ))}
                         </nav>
                     </div>
                 </div>
