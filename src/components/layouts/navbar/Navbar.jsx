@@ -81,7 +81,7 @@ function Navbar() {
                                 <button
                                     key={s.id}
                                     onClick={() => scrollTo(s.id)}
-                                    className="hover:text-teal-700 cursor-pointer"
+                                    className="hover:text-teal-700 font-medium cursor-pointer"
                                 >
                                     {s.label}
                                 </button>
