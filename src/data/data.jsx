@@ -21,8 +21,8 @@ export const skills = [
     {
         category: "Programming Languages",
         items: [
-            { title: "JavaScript (ES6+)", icon: "js" },
             { title: "PHP", icon: "php" },
+            { title: "JavaScript (ES6+)", icon: "js" },
             { title: "Python", icon: "python" },
             { title: "SQL", icon: "sql" },
             { title: "HTML5", icon: "html" },
@@ -72,7 +72,6 @@ export const skills = [
         category: "DevOps & Cloud",
         items: [
             { title: "Docker", icon: "docker" },
-            { title: "Kubernetes", icon: "k8s" },
             { title: "Jenkins", icon: "jenkins" },
             { title: "Git", icon: "git" },
             { title: "GitHub Actions", icon: "github" },
@@ -98,7 +97,7 @@ export const skills = [
         category: "Third-Party Integrations",
         items: [
             { title: "Payment Gateways", icon: "payment" },
-            { title: "Logistics APIs (Nuport, Pathao)", icon: "logistics" },
+            { title: "Logistics APIs (ZohoBooks, QuickBooks, Ebay, Nuport, Pathao)", icon: "logistics" },
             { title: "ChatGPT API", icon: "chatgpt" },
             { title: "ZKTeco API", icon: "zkteco" },
             { title: "REST/SOAP Services", icon: "soap" }

@@ -30,8 +30,12 @@ function ExperienceSection() {
   const items = experience.slice(0, 4)
   return (
     <div className={'bg-primary-xlight'}>
-      <Container className="py-12" id="experience">
-        <h3 className="text-2xl font-bold mb-8 sm:text-center">My Work Experience</h3>
+      <Container className="py-12 " id="experience">
+          <div className=" sm:text-center mb-12">
+              <h3 className="text-2xl font-bold">My Work Experience</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">A timeline of my professional growth and contributions.</p>
+          </div>
+
         <div className="relative">
           <div className="absolute left-[20px] top-0 h-full border-l border-dashed border-gray-400 dark:border-gray-500 sm:hidden"></div>
           <div className="absolute left-1/2 top-0 -translate-x-1/2 h-full border-l border-dashed border-gray-400 dark:border-gray-500 hidden sm:block"></div>

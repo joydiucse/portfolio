@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from "../common/Container.jsx";
 
-function AboutMe(props) {
+function AboutMe() {
     return (
         <div className={'bg-primary-xlight'}>
             <Container className={'py-12'}>
