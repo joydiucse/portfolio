@@ -17,38 +17,95 @@ export const profile = {
     image: image('joy-square.jpg')
 }
 
-export const summary = "Results-driven Senior Software Engineer with 6+ years in full-stack development, system architecture, and database optimization. Expert in designing scalable, high-performance web applications using PHP, Laravel, Node.js, Express.js, React, and Next.js, with strong MySQL, PostgreSQL, and MongoDB expertise. Skilled in microservices, API design, and cloud-native deployments. Proven success optimizing performance, leading cross-functional teams, and delivering secure, maintainable solutions that drive business growth."
-
 export const skills = [
     {
         category: "Programming Languages",
-        items: ["JavaScript (ES6+)", "PHP", "Python", "SQL", "HTML5", "CSS3", "TypeScript"]
+        items: [
+            { title: "JavaScript (ES6+)", icon: "js" },
+            { title: "PHP", icon: "php" },
+            { title: "Python", icon: "python" },
+            { title: "SQL", icon: "sql" },
+            { title: "HTML5", icon: "html" },
+            { title: "CSS3", icon: "css" },
+            { title: "TypeScript", icon: "ts" }
+        ]
     },
     {
         category: "Frameworks & Libraries",
-        items: ["Node.js", "Express.js", "React.js", "Next.js", "Laravel", "Redux", "Tailwind CSS", "Material-UI", "Bootstrap"]
+        items: [
+            { title: "Node.js", icon: "node" },
+            { title: "Express.js", icon: "express" },
+            { title: "React.js", icon: "react" },
+            { title: "Next.js", icon: "next" },
+            { title: "Laravel", icon: "laravel" },
+            { title: "Redux", icon: "redux" },
+            { title: "Tailwind CSS", icon: "tailwind" },
+            { title: "Material-UI", icon: "mui" },
+            { title: "Bootstrap", icon: "bootstrap" }
+        ]
     },
     {
         category: "Architecture & Design",
-        items: ["Microservices", "RESTful APIs", "MVC", "Design Patterns", "System Design", "Scalable & Modular Architecture"]
+        items: [
+            { title: "Microservices", icon: "microservices" },
+            { title: "RESTful APIs", icon: "api" },
+            { title: "MVC", icon: "mvc" },
+            { title: "Design Patterns", icon: "design" },
+            { title: "System Design", icon: "system" },
+            { title: "Scalable & Modular Architecture", icon: "architecture" }
+        ]
     },
     {
         category: "Databases & Caching",
-        items: ["MySQL", "PostgreSQL", "MongoDB", "Redis", "Query Optimization", "Indexing", "ORM (Eloquent, Mongoose)", "Data Modeling"]
+        items: [
+            { title: "MySQL", icon: "mysql" },
+            { title: "PostgreSQL", icon: "postgres" },
+            { title: "MongoDB", icon: "mongodb" },
+            { title: "Redis", icon: "redis" },
+            { title: "Query Optimization", icon: "optimize" },
+            { title: "Indexing", icon: "index" },
+            { title: "ORM (Eloquent, Mongoose)", icon: "orm" },
+            { title: "Data Modeling", icon: "data" }
+        ]
     },
     {
         category: "DevOps & Cloud",
-        items: ["Docker", "Kubernetes", "Jenkins", "Git", "GitHub Actions", "CI/CD", "AWS", "Cloud Computing", "Infrastructure as Code (IaC)"]
+        items: [
+            { title: "Docker", icon: "docker" },
+            { title: "Kubernetes", icon: "k8s" },
+            { title: "Jenkins", icon: "jenkins" },
+            { title: "Git", icon: "git" },
+            { title: "GitHub Actions", icon: "github" },
+            { title: "CI/CD", icon: "cicd" },
+            { title: "AWS", icon: "aws" },
+            { title: "Cloud Computing", icon: "cloud" },
+            { title: "Infrastructure as Code (IaC)", icon: "iac" }
+        ]
     },
     {
         category: "Testing & Methodologies",
-        items: ["Unit", "Integration", "End-to-End Testing", "TDD", "BDD", "Agile/Scrum", "SDLC"]
+        items: [
+            { title: "Unit Testing", icon: "unit" },
+            { title: "Integration Testing", icon: "integration" },
+            { title: "End-to-End Testing", icon: "e2e" },
+            { title: "TDD", icon: "tdd" },
+            { title: "BDD", icon: "bdd" },
+            { title: "Agile/Scrum", icon: "agile" },
+            { title: "SDLC", icon: "sdlc" }
+        ]
     },
     {
         category: "Third-Party Integrations",
-        items: ["Payment Gateways", "Logistics APIs (Nuport, Pathao)", "ChatGPT API", "ZKTeco API", "REST/SOAP Services"]
+        items: [
+            { title: "Payment Gateways", icon: "payment" },
+            { title: "Logistics APIs (Nuport, Pathao)", icon: "logistics" },
+            { title: "ChatGPT API", icon: "chatgpt" },
+            { title: "ZKTeco API", icon: "zkteco" },
+            { title: "REST/SOAP Services", icon: "soap" }
+        ]
     }
-]
+];
+
 
 export const experience = [
     {

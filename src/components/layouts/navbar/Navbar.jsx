@@ -40,6 +40,7 @@ function Navbar() {
 
     const sections = [
         { label: 'Services', id: 'services' },
+        { label: 'Skills', id: 'skills' },
         { label: 'Works', id: 'works' },
         { label: 'Experience', id: 'experience' },
         { label: 'Testimonials', id: 'testimonials' },
