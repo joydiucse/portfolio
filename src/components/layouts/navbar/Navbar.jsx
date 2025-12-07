@@ -104,7 +104,7 @@ function Navbar() {
                             >
                                 {theme === 'dark' ? <FiSun /> : <FiMoon />}
                             </button>
-                            <PrimaryButton>
+                            <PrimaryButton onClick={() => scrollTo('hire-me')}>
                                 <span>Hire Me</span> <ReactIcon name={'right-arrow'}/>
                             </PrimaryButton>
                         </div>

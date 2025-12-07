@@ -99,7 +99,7 @@ function Service() {
                 </div>
 
                 {/* COUNTS */}
-                <div className="flex flex-wrap md:flex-nowrap gap-10 md:gap-20">
+                {/*<div className="flex flex-wrap md:flex-nowrap gap-10 md:gap-20">
                   {serviceCount.map((item, index) => (
                       <div key={index} className="flex flex-col items-center">
                         <h3 className="text-3xl md:text-4xl font-semibold text-primary-dark">
@@ -108,7 +108,7 @@ function Service() {
                         <h3 className="text-xs md:text-sm">{item?.label}</h3>
                       </div>
                   ))}
-                </div>
+                </div>*/}
 
               </div>
             </div>

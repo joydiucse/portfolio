@@ -8,6 +8,7 @@ export const profile = {
     shortName: "Joynal",
     role: "Senior Software Engineer",
     summary: "6+ years in full-stack development, system architecture, and database optimization",
+    longSummary: "Results-driven Full-Stack Developer with 6+ years of experience building scalable, high-performance web applications. Skilled in PHP, Laravel, Node.js, React, and Next.js, with strong expertise in MySQL, PostgreSQL, and MongoDB. I focus on clean architecture, optimized performance, and secure API-driven solutions. Passionate about creating reliable systems that support real business growth.",
     phone: "+88 01785 893609",
     phoneValue: "+8801785893609",
     email: "joy.diu.cse@gmail.com",

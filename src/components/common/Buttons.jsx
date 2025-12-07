@@ -1,7 +1,7 @@
 import {Button} from "@mui/material";
 
 
-export const PrimaryButton = ({children}) => {
+export const PrimaryButton = ({children, ...props}) => {
   return (
       <Button
           variant="contained"
@@ -10,6 +10,7 @@ export const PrimaryButton = ({children}) => {
               borderRadius: "5px",
               textTransform: "none"
           }}
+          {...props}
       >
           {children}
       </Button>
