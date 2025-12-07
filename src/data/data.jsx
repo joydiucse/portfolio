@@ -20,6 +20,7 @@ export const profile = {
 export const skills = [
     {
         category: "Programming Languages",
+        icon:'programming',
         items: [
             { title: "PHP", icon: "php" },
             { title: "JavaScript (ES6+)", icon: "js" },
@@ -32,6 +33,7 @@ export const skills = [
     },
     {
         category: "Frameworks & Libraries",
+        icon:'frameworks',
         items: [
             { title: "Node.js", icon: "node" },
             { title: "Express.js", icon: "express" },
@@ -46,6 +48,7 @@ export const skills = [
     },
     {
         category: "Architecture & Design",
+        icon:'architecture',
         items: [
             { title: "Microservices", icon: "microservices" },
             { title: "RESTful APIs", icon: "api" },
@@ -57,6 +60,7 @@ export const skills = [
     },
     {
         category: "Databases & Caching",
+        icon:'database',
         items: [
             { title: "MySQL", icon: "mysql" },
             { title: "PostgreSQL", icon: "postgres" },
@@ -70,6 +74,7 @@ export const skills = [
     },
     {
         category: "DevOps & Cloud",
+        icon:'devops',
         items: [
             { title: "Docker", icon: "docker" },
             { title: "Jenkins", icon: "jenkins" },
@@ -83,6 +88,7 @@ export const skills = [
     },
     {
         category: "Testing & Methodologies",
+        icon:'methodology',
         items: [
             { title: "Unit Testing", icon: "unit" },
             { title: "Integration Testing", icon: "integration" },
@@ -95,6 +101,7 @@ export const skills = [
     },
     {
         category: "Third-Party Integrations",
+        icon:'gpt',
         items: [
             { title: "Payment Gateways", icon: "payment" },
             { title: "Logistics APIs (ZohoBooks, QuickBooks, Ebay, Nuport, Pathao)", icon: "logistics" },
