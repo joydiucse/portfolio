@@ -33,7 +33,7 @@ function AboutMe() {
             <div className="space-y-2">
               <p className="text-2xl md:text-3xl font-semibold">About Me</p>
               <p className="text-4xl md:text-5xl text-primary-dark font-bold">{name}</p>
-              <p className="text-sm font-medium text-gray-600 dark:text-gray-400">{role} • {location}</p>
+              <p className="text-sm font-medium text-gray-600 dark:text-gray-400">{role} • {profile?.currentCompany}</p>
             </div>
             <p className="text-sm text-gray-700 dark:text-gray-300">{profile?.longSummary}</p>
             <div className="flex flex-wrap gap-8">

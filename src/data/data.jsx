@@ -12,6 +12,7 @@ export const profile = {
     phone: "+88 01785 893609",
     phoneValue: "+8801785893609",
     email: "joy.diu.cse@gmail.com",
+    currentCompany: "Nexdecade Technology Ltd",
     location: "Amin Bazar, Savar, Dhaka, Bangladesh",
     linkedin: "https://linkedin.com/in/joynal-abedin-cse",
     github: "https://github.com/joydiucse",

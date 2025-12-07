@@ -21,7 +21,7 @@ function Footer() {
       <Container className="py-16 space-y-6 relative">
         <div className="grid sm:grid-cols-5 items-center gap-6">
           <div className="col-span-2 space-y-1">
-            <figure className={'size-16 rounded-md overflow-hidden border-2  border-primary/40 dark:border-gray-300 '}>
+            <figure className={'size-16 rounded-md overflow-hidden border-2  border-gray-300 '}>
               <Image src={profile?.image} className={'image-cover'}/>
             </figure>
             <div className="text-xl sm:text-2xl font-semibold">{profile?.fullName || profile?.name || 'Portfolio'}</div>
