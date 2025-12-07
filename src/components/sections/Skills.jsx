@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from '../../components/common/Container.jsx'
-import { ReactIcon } from '../common/Icons.jsx'
+import { ReactIcon } from '../common/ReactIcon.jsx'
 import {skills} from "../../data/data.jsx";
 
 function Skills() {
@@ -23,7 +23,7 @@ function Skills() {
         <div className="flex flex-wrap  relative items-start sm:justify-center gap-8 sm:gap-12">
           {skills.map((item, idx) => (
             <div key={idx} className="relative text-center flex sm:flex-col items-start sm:items-center justify-start sm:justify-center gap-6 sm:gap-2">
-              <div className="fcc pt-4 sm:pt-0">
+              <div className="fcc pt-3 sm:pt-0">
                 <div className="relative">
                   <div className="size-24 sm:size-20 rounded-full bg-secondary fcc shadow-md transition-transform hover:scale-110">
                     <ReactIcon name={item.icon} className="text-3xl text-white" />

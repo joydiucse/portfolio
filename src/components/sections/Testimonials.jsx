@@ -7,7 +7,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import {image} from "../../utils/media.js";
 import { Dialog, DialogContent, IconButton } from '@mui/material'
-import {ReactIcon} from "../common/Icons.jsx";
+import {ReactIcon} from "../common/ReactIcon.jsx";
 
 const testimonials = [
   {

@@ -2,7 +2,7 @@ import React from 'react'
 import Container from '../../components/common/Container.jsx'
 import {latestProjects} from '../../data/data.jsx'
 import {Link} from "react-router-dom";
-import {ReactIcon} from "../common/Icons.jsx";
+import {ReactIcon} from "../common/ReactIcon.jsx";
 import { Image } from '../../utils/Global.jsx'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper/modules'

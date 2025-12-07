@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../../common/Container.jsx'
 import {profile, social} from '../../../data/data.jsx'
-import {ReactIcon} from '../../common/Icons.jsx'
+import {ReactIcon} from '../../common/ReactIcon.jsx'
 import {Image} from "../../../utils/Global.jsx";
 
 function Footer() {

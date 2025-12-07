@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Container from '../../components/common/Container.jsx'
 import {profile} from '../../data/data.jsx'
-import {ReactIcon} from '../common/Icons.jsx'
+import {ReactIcon} from '../common/ReactIcon.jsx'
 import {PrimaryButton} from "../common/Buttons.jsx";
 
 const highlights = [

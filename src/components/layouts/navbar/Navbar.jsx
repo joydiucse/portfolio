@@ -6,7 +6,7 @@ import { Image } from "../../../utils/Global.jsx";
 import { image } from "../../../utils/media.js";
 import {AnimatePing} from "../../common/Animate.jsx";
 import {PrimaryButton} from "../../common/Buttons.jsx";
-import {ReactIcon} from "../../common/Icons.jsx";
+import {ReactIcon} from "../../common/ReactIcon.jsx";
 import {Link} from "react-router-dom";
 
 function Navbar() {

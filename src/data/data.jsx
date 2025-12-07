@@ -20,7 +20,7 @@ export const profile = {
 export const skills = [
     {
         category: "Programming Languages",
-        icon:'programming',
+        icon:'code',
         items: [
             { title: "PHP", icon: "php" },
             { title: "JavaScript (ES6+)", icon: "js" },
@@ -33,7 +33,7 @@ export const skills = [
     },
     {
         category: "Frameworks & Libraries",
-        icon:'frameworks',
+        icon:'node',
         items: [
             { title: "Node.js", icon: "node" },
             { title: "Express.js", icon: "express" },
@@ -48,7 +48,7 @@ export const skills = [
     },
     {
         category: "Architecture & Design",
-        icon:'architecture',
+        icon:'web',
         items: [
             { title: "Microservices", icon: "microservices" },
             { title: "RESTful APIs", icon: "api" },
@@ -74,7 +74,7 @@ export const skills = [
     },
     {
         category: "DevOps & Cloud",
-        icon:'devops',
+        icon:'git-fork',
         items: [
             { title: "Docker", icon: "docker" },
             { title: "Jenkins", icon: "jenkins" },
@@ -101,7 +101,7 @@ export const skills = [
     },
     {
         category: "Third-Party Integrations",
-        icon:'gpt',
+        icon:'gear',
         items: [
             { title: "Payment Gateways", icon: "payment" },
             { title: "Logistics APIs (ZohoBooks, QuickBooks, Ebay, Nuport, Pathao)", icon: "logistics" },

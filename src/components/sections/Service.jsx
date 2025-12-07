@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../../components/common/Container.jsx'
 import {Link} from "react-router-dom";
-import {ReactIcon} from "../common/Icons.jsx";
+import {ReactIcon} from "../common/ReactIcon.jsx";
 
 const data = [
     {
